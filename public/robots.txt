@@ -4,10 +4,4 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: Facebot
-Allow: /
-
-User-agent: meta-externalagent
-Allow: /
-
 Sitemap: https://achlinks.in/sitemap.xml
