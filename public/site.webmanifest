@@ -1,0 +1,28 @@
+{
+  "name": "Group ACH - Home Loan & LAP Consultant Bangalore",
+  "short_name": "Group ACH",
+  "description": "Expert Home Loan and Loan Against Property (LAP) advisory in Bangalore across 70+ partner banks & NBFCs.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#071530",
+  "theme_color": "#071530",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

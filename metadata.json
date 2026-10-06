@@ -1,0 +1,6 @@
+{
+  "name": "Group ACH - Home Loan & Loan Against Property Advisory",
+  "description": "Get the best Home Loan and Loan Against Property rates with Group ACH. Connecting you with 70+ top banks and NBFCs for fast approvals, door-step service, and maximum LTV.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
