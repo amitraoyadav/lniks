@@ -72,7 +72,7 @@ export const LoanAgainstPropertyPage: React.FC<LoanAgainstPropertyPageProps> = (
         <div className="max-w-4xl mx-auto text-center space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold">
             <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-            <span>Unlocking Real Estate Equity with 70+ Institutional Lenders</span>
+            <span>Unlocking Real Estate Equity with Leading Institutional Lenders</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif text-slate-900 tracking-tight leading-tight">
             Loan Against Property (LAP) - Unlock Equity From Your Real Estate

@@ -329,7 +329,7 @@ export const SITE_SEO_REGISTRY: Record<string, PageSeoConfig> = {
   '/about': {
     title: 'About Group ACH: Institutional Loan Connector & Advisory',
     description:
-      'Learn about Group ACH\'s mission, authorized channel partnership with 70+ financial institutions, transparent advisory, and Bangalore leadership.',
+      'Learn about Group ACH\'s mission, authorized channel partnership with leading financial institutions, transparent advisory, and Bangalore leadership.',
     canonicalPath: '/about',
     h1: 'About Group ACH - Transparent Loan Connecting Advisory',
     keywords: 'about group ach, ach links, authorized loan connector, group ach leadership',
@@ -362,16 +362,15 @@ export const SITE_SEO_REGISTRY: Record<string, PageSeoConfig> = {
       { name: 'FAQs', path: '/faq' },
     ],
   },
-  '/blogs': {
-    title: 'Home Loan & Property Finance Knowledge Hub | Group ACH Blogs',
+  '/blog': {
+    title: 'Home Loan & Property Finance Knowledge Hub | Group ACH Blog',
     description:
       'Educational guides, regulatory updates, borrowing strategies, and property finance insights authored by seasoned mortgage advisors at Group ACH.',
-    canonicalPath: '/blogs',
+    canonicalPath: '/blog',
     h1: 'Mortgage Insights, Rate Trends & Home Loan Guides',
-    keywords: 'home loan blog, mortgage guides India, property finance articles, home loan tips',
     breadcrumbs: [
       { name: 'Home', path: '/' },
-      { name: 'Blogs', path: '/blogs' },
+      { name: 'Blog', path: '/blog' },
     ],
   },
   '/sitemap': {
@@ -603,7 +602,7 @@ export const ROUTE_ALIASES: Record<string, string> = {
   '/loan-against-property-consultant': '/loan-against-property',
   '/property-loan': '/loan-against-property',
   '/mortgage-loan': '/loan-against-property',
-  '/blog': '/blogs',
+  '/blogs': '/blog',
   '/loans-in-bengaluru': '/loans-in-bangalore',
   '/loans-bangalore': '/loans-in-bangalore',
   '/bangalore-loans': '/loans-in-bangalore',
@@ -621,7 +620,13 @@ export const ROUTE_ALIASES: Record<string, string> = {
  */
 export function applyPageSeo(path: string, customConfig?: Partial<PageSeoConfig>): PageSeoConfig {
   const cleanPath = path.toLowerCase().replace(/\/$/, '') || '/';
-  const targetPath = ROUTE_ALIASES[cleanPath] || cleanPath;
+  let targetPath = ROUTE_ALIASES[cleanPath] || cleanPath;
+  if (!SITE_SEO_REGISTRY[targetPath] && targetPath.startsWith('/blog/')) {
+    const asBlogs = targetPath.replace('/blog/', '/blogs/');
+    if (SITE_SEO_REGISTRY[asBlogs]) {
+      targetPath = asBlogs;
+    }
+  }
   const matched = SITE_SEO_REGISTRY[targetPath] || SITE_SEO_REGISTRY['/'];
   const config: PageSeoConfig = {
     ...matched,
@@ -632,6 +637,12 @@ export function applyPageSeo(path: string, customConfig?: Partial<PageSeoConfig>
 
   // Title
   document.title = config.title;
+
+  // Remove any legacy meta keywords tag per Google guidelines
+  const kwMeta = document.querySelector('meta[name="keywords"]');
+  if (kwMeta) {
+    kwMeta.remove();
+  }
 
   // Meta Description
   let descMeta = document.querySelector('meta[name="description"]');
@@ -710,7 +721,6 @@ export function applyPageSeo(path: string, customConfig?: Partial<PageSeoConfig>
   const breadcrumbsSchema =
     config.breadcrumbs && config.breadcrumbs.length > 0
       ? {
-          '@context': 'https://schema.org',
           '@type': 'BreadcrumbList',
           itemListElement: config.breadcrumbs.map((b, index) => ({
             '@type': 'ListItem',
@@ -721,9 +731,16 @@ export function applyPageSeo(path: string, customConfig?: Partial<PageSeoConfig>
         }
       : null;
 
+  // Clean inner @context if present so graph items are strictly compliant
+  const cleanSchema = (s: any) => {
+    if (!s) return null;
+    const { '@context': _, ...rest } = s;
+    return rest;
+  };
+
   const graphElements = [
     ...(breadcrumbsSchema ? [breadcrumbsSchema] : []),
-    ...(config.schema ? [config.schema] : []),
+    ...(config.schema ? [cleanSchema(config.schema)] : []),
   ];
 
   if (graphElements.length > 0) {

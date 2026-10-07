@@ -19,7 +19,7 @@ export const FaqSection: React.FC = () => {
   const faqs = [
     {
       q: 'How much loan can I get on my property?',
-      a: 'For Home Loans, you can typically get between 75% and 90% of the registered property cost. For Loan Against Property (LAP), you can obtain up to 60% to 70% of the current fair market valuation across 70+ partner banks.',
+      a: 'For Home Loans, you can typically get between 75% and 90% of the registered property cost depending on ticket size and RBI guidelines. For Loan Against Property (LAP), lenders typically provide 60% to 70% of the current fair market valuation across leading partner banks and NBFCs.',
     },
     {
       q: 'What are the Terms & Conditions or advisory fees?',
@@ -49,7 +49,7 @@ export const FaqSection: React.FC = () => {
             How much loan do you require?
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-2 max-w-xl mx-auto">
-            Select your required amount below and connect directly with a Group ACH specialist on our Secured Line Chat for immediate rate comparisons across 70+ banks in Bangalore.
+            Select your required amount below and connect directly with a Group ACH specialist on our Secured Line Chat for guidance across leading banks in Bangalore.
           </p>
         </div>
 

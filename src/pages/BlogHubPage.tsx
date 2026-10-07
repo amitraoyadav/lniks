@@ -550,7 +550,7 @@ export const BlogHubPage: React.FC<BlogHubPageProps> = ({
               Need Direct Guidance on This Subject?
             </h2>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Group ACH connects you with 70+ institutional lenders and structures your loan file for fastest approval without branch hassle.
+              Group ACH connects you with leading institutional lenders and structures your loan file for smooth approval without branch hassle.
             </p>
             <div className="flex flex-wrap items-center gap-3 pt-1">
               <button

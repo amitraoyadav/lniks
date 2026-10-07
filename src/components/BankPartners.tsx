@@ -28,10 +28,10 @@ export const BankPartners: React.FC<BankPartnersProps> = ({ onSelectBankQuote })
             <span>Institutional Lending Network</span>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight text-balance">
-            Associated with 70+ Top Banks & Housing Finance Institutions
+            Associated with Top Banks & Housing Finance Institutions
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">
-            As an independent loan connector, Group ACH evaluates your profile against the underwriting criteria of India’s premier financial institutions to secure the lowest interest rates, highest LTV, and minimal processing charges.
+            As an independent loan connector, Group ACH evaluates your profile against the underwriting criteria of India’s premier financial institutions to help you identify competitive interest rates, suitable LTV, and transparent processing charges.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export const BankPartners: React.FC<BankPartnersProps> = ({ onSelectBankQuote })
                   : 'text-slate-600 hover:text-slate-900'
               }`}
             >
-              {cat === 'All' ? 'All 70+ Lenders' : cat}
+              {cat === 'All' ? 'All Lenders' : cat}
             </button>
           ))}
         </div>
@@ -125,7 +125,7 @@ export const BankPartners: React.FC<BankPartnersProps> = ({ onSelectBankQuote })
             onClick={() => onSelectBankQuote('Best Available Bank Offer')}
             className="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold rounded-lg shrink-0 transition-colors"
           >
-            Compare All 70+ Rates
+            Compare Partner Bank Rates
           </button>
         </div>
 

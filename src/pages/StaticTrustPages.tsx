@@ -49,7 +49,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenApplyModal, onNaviga
             About Group ACH - Transparent Loan Connecting Advisory
           </h1>
           <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Empowering property buyers and homeowners across Bangalore with unbiased rate comparisons, multi-lender negotiation, and complete doorstep assistance across 70+ partner banks.
+            Empowering property buyers and homeowners across Bangalore with unbiased rate comparisons, multi-lender evaluation, and complete doorstep assistance across leading partner banks and NBFCs.
           </p>
         </div>
       </section>
@@ -64,10 +64,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenApplyModal, onNaviga
               Navigating India’s lending ecosystem can be overwhelming. Individual branch managers are incentivized to sell only their internal products, regardless of whether a competitive lender offers a lower spread or higher valuation.
             </p>
             <p>
-              <strong>Group ACH</strong> was established to level the playing field for borrowers. Acting as an independent loan connector and credit structuring specialist, we evaluate your income credentials and property title deeds against the underwriting criteria of <strong>70+ top public banks, private lenders, and Housing Finance Companies (HFCs)</strong>.
+              <strong>Group ACH</strong> was established to level the playing field for borrowers. Acting as an independent loan connector and credit structuring specialist, we evaluate your income credentials and property title deeds against the underwriting criteria of <strong>leading public banks, private lenders, and Housing Finance Companies (HFCs)</strong>.
             </p>
             <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 font-medium">
-              Zero Upfront Fees: We do not charge retail borrowers upfront consultation fees. Our sole objective is ensuring you secure the lowest EMI and maximum eligibility.
+              Zero Upfront Fees: We do not charge retail borrowers upfront consultation fees. Our objective is ensuring you secure competitive EMI terms and structured loan guidance.
             </div>
           </div>
 
@@ -75,7 +75,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenApplyModal, onNaviga
             <h3 className="font-bold text-sm text-slate-900 uppercase tracking-wide">Key Benchmarks at a Glance</h3>
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-center">
-                <span className="block text-2xl font-bold font-serif text-[#85673E]">70+</span>
+                <span className="block text-2xl font-bold font-serif text-[#85673E]">Multi-Lender</span>
                 <span className="text-[11px] text-slate-600">Partner Banks & NBFCs</span>
               </div>
               <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-center">
@@ -261,7 +261,7 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onOpenApplyModal, onNavigate }
   const allFaqs = [
     {
       q: 'How much loan can I get on my property?',
-      a: 'For Home Loans, you can typically borrow between 75% and 90% of the property cost. For Loan Against Property (LAP), lenders provide 60% to 70% of the market valuation across 70+ partner banks.',
+      a: 'For Home Loans, you can typically borrow between 75% and 90% of the property cost depending on ticket size and RBI guidelines. For Loan Against Property (LAP), lenders provide 60% to 70% of the market valuation across leading partner banks and NBFCs.',
     },
     {
       q: 'Are there any Terms & Conditions or advisory fees?',

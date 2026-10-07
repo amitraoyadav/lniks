@@ -109,7 +109,7 @@ export const BengaluruLocationPage: React.FC<BengaluruLocationPageProps> = ({
           </h1>
 
           <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Direct doorstep assistance across Bengaluru from our Jayanagar headquarters. We compare rates across 70+ banks to secure your lowest EMI. Terms & Conditions: Nil.
+            Direct doorstep assistance across Bengaluru from our Jayanagar headquarters. We compare rates across leading partner banks to secure competitive EMI terms. Terms & Conditions: Nil.
           </p>
 
           {/* Quick Metrics */}
@@ -276,7 +276,7 @@ export const BengaluruLocationPage: React.FC<BengaluruLocationPageProps> = ({
             Ready to Compare Bengaluru Loan Rates?
           </h3>
           <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
-            Speak directly with an advisor from our Jayanagar team. We negotiate with 70+ partner banks for the lowest interest rate and maximum loan eligibility.
+            Speak directly with an advisor from our Jayanagar team. We negotiate with leading partner banks and NBFCs for competitive interest rates and suitable loan terms.
           </p>
           <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
             <button

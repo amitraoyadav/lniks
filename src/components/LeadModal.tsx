@@ -165,7 +165,7 @@ export const LeadModal: React.FC<LeadModalProps> = ({
                 Start Secure Chat
               </h3>
               <p className="text-xs text-slate-500 mt-0.5">
-                {initialVariant ? `Inquiring for: ${initialVariant}` : 'Direct advisor consultation · 70+ Banks'}
+                {initialVariant ? `Inquiring for: ${initialVariant}` : 'Direct advisor consultation · Leading Partner Banks'}
               </p>
             </div>
 

@@ -43,7 +43,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenApplyModal }) 
                 Navigating retail bank branches for a Home Loan or Loan Against Property in India is notoriously tedious: rigid internal credit score cards, opaque valuation procedures, repetitive branch visits, and endless paperwork delays.
               </p>
               <p>
-                <strong className="text-slate-900 font-semibold">{BRAND_CONFIG.name}</strong> was founded to flip this balance of power back to the borrower. As an independent loan connector associated with <strong className="text-slate-900 font-semibold">70+ premier registered scheduled banks, housing finance companies (HFCs), and NBFCs</strong>, we act as your personal financial advocate.
+                <strong className="text-slate-900 font-semibold">{BRAND_CONFIG.name}</strong> was founded to flip this balance of power back to the borrower. As an independent loan connector associated with <strong className="text-slate-900 font-semibold">leading premier registered scheduled banks, housing finance companies (HFCs), and NBFCs</strong>, we act as your personal financial advocate.
               </p>
               <p>
                 From understanding title deeds and municipal plan sanctions, to negotiating fractional basis points off the lending rate and handling doorstep document collection, your dedicated Group ACH advisor manages the entire lifecycle until final disbursement into your account.
@@ -118,7 +118,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenApplyModal }) 
                   </div>
                   <div>
                     <strong className="text-white block font-medium">Independent Multi-Lender Representation</strong>
-                    We compare underwriting norms across 70+ banks rather than locking you into one bank's criteria.
+                    We compare underwriting norms across leading partner banks and NBFCs rather than locking you into one bank's criteria.
                   </div>
                 </div>
 

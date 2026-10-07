@@ -23,7 +23,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenApplyModal, onNavigate }) 
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
             <span className="inline-block w-2 h-2 rounded-full bg-[#8C6D46] animate-pulse" />
-            <span className="font-medium text-[#FAF7F2]">Connecting you to 70+ Banks & NBFCs</span>
+            <span className="font-medium text-[#FAF7F2]">Connecting you to Leading Banks & NBFCs</span>
             <span className="hidden sm:inline text-[#6B6560]">·</span>
             <span className="hidden sm:inline text-[#C5A880]">Direct Loan Advisory</span>
           </div>
@@ -145,16 +145,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenApplyModal, onNavigate }) 
               Eligibility
             </a>
             <a
-              href="/blogs"
+              href="/blog"
               onClick={(e) => {
                 if (onNavigate) {
                   e.preventDefault();
-                  onNavigate('/blogs');
+                  onNavigate('/blog');
                 }
               }}
               className="hover:text-[#1C1917] transition-colors"
             >
-              Blogs
+              Blog
             </a>
             <a
               href="/about"
@@ -253,15 +253,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenApplyModal, onNavigate }) 
               }}
               className="px-3 py-2 rounded-md bg-emerald-50 text-emerald-900 font-bold hover:bg-emerald-100 transition-colors flex items-center justify-between"
             >
-              <span>Loans in Bangalore (70+ Banks)</span>
-              <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-200">#1</span>
+              <span>Loans in Bangalore</span>
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-200">Bangalore</span>
             </a>
             <a
-              href="/home-loan-bengaluru"
+              href="/home-loan/bangalore"
               onClick={(e) => {
                 if (onNavigate) {
                   e.preventDefault();
-                  onNavigate('/home-loan-bengaluru');
+                  onNavigate('/home-loan/bangalore');
                 }
                 setMobileMenuOpen(false);
               }}

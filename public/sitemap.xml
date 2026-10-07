@@ -9,282 +9,299 @@
   <url>
     <loc>https://www.achlinks.in/</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/" />
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- 2. Primary Service Hubs & Special Offers -->
+  <!-- 2. Primary Bangalore Hub -->
   <url>
     <loc>https://www.achlinks.in/loans-in-bangalore</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/loans-in-bangalore" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/loans-in-bangalore" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/loans-in-bangalore" />
     <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- 3. Primary Core Product & City Landing Pages -->
+  <url>
+    <loc>https://www.achlinks.in/home-loan</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/home-loan" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/home-loan" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.achlinks.in/home-loan/bangalore</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/home-loan/bangalore" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/home-loan/bangalore" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.achlinks.in/loan-against-property</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/loan-against-property" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/loan-against-property" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.achlinks.in/loan-against-property/bangalore</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/loan-against-property/bangalore" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/loan-against-property/bangalore" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.achlinks.in/business-loan</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/business-loan" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/business-loan" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.achlinks.in/personal-loan</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/personal-loan" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/personal-loan" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 4. Key Guides & Calculators -->
+  <url>
+    <loc>https://www.achlinks.in/home-loan/eligibility</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/home-loan/eligibility" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/home-loan/eligibility" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.achlinks.in/home-loan/documents-required</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/home-loan/documents-required" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/home-loan/documents-required" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.achlinks.in/home-loan/emi-calculator</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/home-loan/emi-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/home-loan/emi-calculator" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.achlinks.in/home-loan/interest-rates</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/home-loan/interest-rates" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/home-loan/interest-rates" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.achlinks.in/home-loan/balance-transfer</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/home-loan/balance-transfer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/home-loan/balance-transfer" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 5. Knowledge Hub / Blog -->
+  <url>
+    <loc>https://www.achlinks.in/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 6. Blog Articles (Canonical) -->
+  <url>
+    <loc>https://www.achlinks.in/blogs/how-to-apply-home-loan-bangalore</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blogs/how-to-apply-home-loan-bangalore" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blogs/how-to-apply-home-loan-bangalore" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blogs/home-loan-eligibility-bangalore</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blogs/home-loan-eligibility-bangalore" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blogs/home-loan-eligibility-bangalore" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blogs/documents-required-for-home-loan</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blogs/documents-required-for-home-loan" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blogs/documents-required-for-home-loan" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blogs/how-home-loan-emi-calculated</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blogs/how-home-loan-emi-calculated" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blogs/how-home-loan-emi-calculated" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blogs/fixed-vs-floating-home-loan-interest-rates</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blogs/fixed-vs-floating-home-loan-interest-rates" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blogs/fixed-vs-floating-home-loan-interest-rates" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blogs/home-loan-balance-transfer-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blogs/home-loan-balance-transfer-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blogs/home-loan-balance-transfer-guide" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blogs/loan-against-property-bangalore-eligibility-documents</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blogs/loan-against-property-bangalore-eligibility-documents" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blogs/loan-against-property-bangalore-eligibility-documents" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blogs/home-loan-vs-loan-against-property</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blogs/home-loan-vs-loan-against-property" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blogs/home-loan-vs-loan-against-property" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blogs/how-cibil-score-affects-loan-eligibility</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blogs/how-cibil-score-affects-loan-eligibility" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blogs/how-cibil-score-affects-loan-eligibility" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blogs/home-loan-for-self-employed-applicants</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blogs/home-loan-for-self-employed-applicants" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blogs/home-loan-for-self-employed-applicants" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blogs/home-loan-for-salaried-employees</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blogs/home-loan-for-salaried-employees" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blogs/home-loan-for-salaried-employees" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blogs/how-much-home-loan-can-i-afford</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blogs/how-much-home-loan-can-i-afford" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blogs/how-much-home-loan-can-i-afford" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blogs/home-loan-processing-step-by-step</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blogs/home-loan-processing-step-by-step" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blogs/home-loan-processing-step-by-step" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blogs/common-reasons-for-home-loan-rejection</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blogs/common-reasons-for-home-loan-rejection" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blogs/common-reasons-for-home-loan-rejection" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blogs/home-loan-prepayment-what-to-consider</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blogs/home-loan-prepayment-what-to-consider" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blogs/home-loan-prepayment-what-to-consider" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- 7. Static Trust, Contact & Directory Pages -->
+  <url>
+    <loc>https://www.achlinks.in/about</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/about" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.achlinks.in/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/contact" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.achlinks.in/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/faq" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://www.achlinks.in/loan-offers</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/loan-offers" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/loan-offers" />
-    <lastmod>2026-10-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/home-loan-bengaluru</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/home-loan-bengaluru" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/home-loan-bengaluru" />
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://www.achlinks.in/sitemap</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/sitemap" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/sitemap" />
-    <lastmod>2026-10-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/home-loan</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/home-loan" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/home-loan" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/home-loan" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/home-loan-consultant</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/home-loan-consultant" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/home-loan-consultant" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/home-loan-consultant" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/loan-against-property</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/loan-against-property" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/loan-against-property" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/loan-against-property" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/loan-against-property-consultant</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/loan-against-property-consultant" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/loan-against-property-consultant" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/loan-against-property-consultant" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
-  <!-- 3. Local Target Pages (Bangalore) -->
-  <url>
-    <loc>https://www.achlinks.in/home-loan-bangalore</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/home-loan-bangalore" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/home-loan-bangalore" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/home-loan-bangalore" />
-    <lastmod>2026-10-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/loan-against-property-bangalore</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/loan-against-property-bangalore" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/loan-against-property-bangalore" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/loan-against-property-bangalore" />
-    <lastmod>2026-10-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <!-- 4. High-Intent Guides & Loan Workflows -->
-  <url>
-    <loc>https://www.achlinks.in/home-loan-eligibility</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/home-loan-eligibility" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/home-loan-eligibility" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/home-loan-eligibility" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/home-loan-documents</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/home-loan-documents" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/home-loan-documents" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/home-loan-documents" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/home-loan-balance-transfer</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/home-loan-balance-transfer" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/home-loan-balance-transfer" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/home-loan-balance-transfer" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/home-loan-for-salaried</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/home-loan-for-salaried" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/home-loan-for-salaried" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/home-loan-for-salaried" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/home-loan-for-self-employed</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/home-loan-for-self-employed" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/home-loan-for-self-employed" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/home-loan-for-self-employed" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <!-- 5. Brand Trust & Corporate E-E-A-T Pages -->
-  <url>
-    <loc>https://www.achlinks.in/about</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/about" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/about" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/contact</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/contact" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/contact" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/contact" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/faq</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/faq" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/faq" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/faq" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- 6. Blog & Content Hub -->
-  <url>
-    <loc>https://www.achlinks.in/blog</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/blog" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/blog/home-loan-eligibility-criteria-guide</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog/home-loan-eligibility-criteria-guide" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/blog/home-loan-eligibility-criteria-guide" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog/home-loan-eligibility-criteria-guide" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/blog/complete-documents-checklist-home-loan</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog/complete-documents-checklist-home-loan" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/blog/complete-documents-checklist-home-loan" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog/complete-documents-checklist-home-loan" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/blog/loan-against-property-vs-home-loan-differences</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog/loan-against-property-vs-home-loan-differences" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/blog/loan-against-property-vs-home-loan-differences" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog/loan-against-property-vs-home-loan-differences" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/blog/home-loan-balance-transfer-savings-calculator</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog/home-loan-balance-transfer-savings-calculator" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/blog/home-loan-balance-transfer-savings-calculator" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog/home-loan-balance-transfer-savings-calculator" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/blog/home-loan-tax-benefits-section-80c-24b</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog/home-loan-tax-benefits-section-80c-24b" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/blog/home-loan-tax-benefits-section-80c-24b" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog/home-loan-tax-benefits-section-80c-24b" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/blog/self-employed-home-loan-income-proof-guide</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog/self-employed-home-loan-income-proof-guide" />
-    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/blog/self-employed-home-loan-income-proof-guide" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog/self-employed-home-loan-income-proof-guide" />
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/blog/loans-in-bangalore-guide-rates-banks</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog/loans-in-bangalore-guide-rates-banks" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog/loans-in-bangalore-guide-rates-banks" />
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/blog/how-to-get-lowest-loan-interest-rates-bangalore</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog/how-to-get-lowest-loan-interest-rates-bangalore" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog/how-to-get-lowest-loan-interest-rates-bangalore" />
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/blog/bbmp-khata-property-loan-approval-bangalore</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog/bbmp-khata-property-loan-approval-bangalore" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog/bbmp-khata-property-loan-approval-bangalore" />
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/blog/business-loans-vs-lap-bangalore-msmes</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog/business-loans-vs-lap-bangalore-msmes" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog/business-loans-vs-lap-bangalore-msmes" />
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.achlinks.in/blog/home-loan-balance-transfer-bangalore-savings</loc>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog/home-loan-balance-transfer-bangalore-savings" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog/home-loan-balance-transfer-bangalore-savings" />
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
 </urlset>

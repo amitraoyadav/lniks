@@ -50,7 +50,7 @@ export const LegalModals: React.FC<LegalModalProps> = ({ type, onClose }) => {
               2. Channel Purpose & Lending Submission
             </h4>
             <p>
-              Your information is exclusively utilized to evaluate loan eligibility and to present your file to the authorized underwriting desks of our 70+ partner banks and housing finance institutions. We never sell, rent, or trade your personal data to unauthorized third-party telemarketers.
+              Your information is exclusively utilized to evaluate loan eligibility and to present your file to the authorized underwriting desks of our partner banks and housing finance institutions. We never sell, rent, or trade your personal data to unauthorized third-party telemarketers.
             </p>
             <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 pt-2">
               3. Data Security & Storage
@@ -77,7 +77,7 @@ export const LegalModals: React.FC<LegalModalProps> = ({ type, onClose }) => {
               1. Independent Channel Partner
             </h4>
             <p>
-              {BRAND_CONFIG.name} ({BRAND_CONFIG.domain}) functions as an independent channel connector. We facilitate connections with 70+ partner banks and housing finance institutions.
+              {BRAND_CONFIG.name} ({BRAND_CONFIG.domain}) functions as an independent channel connector. We facilitate connections with leading partner banks and housing finance institutions.
             </p>
             <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 pt-2">
               2. Registered Office & Contact

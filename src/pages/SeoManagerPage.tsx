@@ -117,7 +117,7 @@ export const SeoManagerPage: React.FC<SeoManagerPageProps> = ({ onNavigate }) =>
       difficulty: 'Medium',
       targetPage: '/home-loan-bangalore',
       intent: 'Comparison Intent',
-      status: '70+ Banks Table Matched',
+      status: 'Bank Comparison Table Matched',
     },
     {
       keyword: 'bbmp a khata loan bangalore',
@@ -384,7 +384,7 @@ export const SeoManagerPage: React.FC<SeoManagerPageProps> = ({ onNavigate }) =>
                     >
                       Home Loans in Bangalore
                     </button>
-                    <p className="text-[11px] text-slate-500">Compare 70+ banks with rates from 8.35% onwards.</p>
+                    <p className="text-[11px] text-slate-500">Compare leading partner banks with rates from 8.35% onwards.</p>
                   </div>
                   <div className="space-y-0.5">
                     <button

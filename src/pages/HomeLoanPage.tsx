@@ -35,7 +35,7 @@ export const HomeLoanPage: React.FC<HomeLoanPageProps> = ({
     },
     {
       q: 'Why should I work with an independent home loan consultant like Group ACH instead of going directly to a single bank?',
-      a: 'When you apply to a single bank branch, you are limited to their rigid underwriting policies, singular interest rate structure, and conservative valuation. Group ACH is connected with 70+ public banks, private institutions, and housing finance companies (HFCs). We compare spreads across lenders, negotiate loan-to-value (LTV) limits, resolve property chain documentation issues, and provide free doorstep service in Bangalore.',
+      a: 'When you apply to a single bank branch, you are limited to their singular internal policies, interest rate structure, and conservative valuation. Group ACH is connected with leading public banks, private institutions, and housing finance companies (HFCs). We compare spreads across lenders, review loan-to-value (LTV) limits, resolve property documentation issues, and provide free doorstep service in Bangalore.',
     },
     {
       q: 'What types of properties in Bangalore can be financed through Group ACH?',
@@ -73,13 +73,13 @@ export const HomeLoanPage: React.FC<HomeLoanPageProps> = ({
         <div className="max-w-4xl mx-auto text-center space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold">
             <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-            <span>Authorized Advisory for 70+ Partner Banks & NBFCs</span>
+            <span>Authorized Advisory for Leading Partner Banks & NBFCs</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif text-slate-900 tracking-tight leading-tight">
-            Home Loan Advisory & Lowest Interest Rates in Bangalore
+            Home Loan Advisory & Competitive Interest Rates in Bangalore
           </h1>
           <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Looking for the right home loan? Group ACH helps you compare, negotiate, and secure the lowest home loan interest rates, maximum loan-to-value, and fastest sanction from 70+ leading Indian banks with doorstep documentation across Bangalore.
+            Looking for the right home loan? Group ACH helps you compare and evaluate home loan interest rates, loan-to-value norms, and sanction processes from leading Indian banks and NBFCs with doorstep documentation across Bangalore.
           </p>
 
           <div className="pt-4 flex flex-wrap items-center justify-center gap-3">
@@ -91,7 +91,7 @@ export const HomeLoanPage: React.FC<HomeLoanPageProps> = ({
               <ArrowRight className="w-4 h-4" />
             </button>
             <a
-              href={buildWhatsAppLink('Hello Group ACH, I want to compare Home Loan rates across 70+ banks for Bangalore.')}
+              href={buildWhatsAppLink('Hello Group ACH, I want to compare Home Loan rates for Bangalore.')}
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold shadow-md transition-all flex items-center gap-2"
@@ -122,7 +122,7 @@ export const HomeLoanPage: React.FC<HomeLoanPageProps> = ({
             <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center font-bold">
               <Building2 className="w-5 h-5 text-emerald-600" />
             </div>
-            <h3 className="font-bold text-slate-900 text-sm">70+ Institutional Lenders</h3>
+            <h3 className="font-bold text-slate-900 text-sm">Leading Institutional Lenders</h3>
             <p className="text-xs text-slate-600 leading-relaxed">
               One application connects you with SBI, HDFC, ICICI, Axis, PNB, Bank of Baroda, Tata Capital, Bajaj Housing, and specialized housing finance companies.
             </p>
@@ -236,7 +236,7 @@ export const HomeLoanPage: React.FC<HomeLoanPageProps> = ({
           </div>
         </div>
 
-        {/* Section 3: 70+ Bank Network Table Preview */}
+        {/* Section 3: Bank Network Table Preview */}
         <div className="space-y-4">
           <h2 className="text-2xl font-bold font-serif text-slate-900">
             Compare Top Institutional Lenders
@@ -314,7 +314,7 @@ export const HomeLoanPage: React.FC<HomeLoanPageProps> = ({
             Ready to Find the Best Home Loan in Bangalore?
           </h3>
           <p className="text-xs text-slate-300 max-w-xl mx-auto leading-relaxed">
-            Speak directly with an experienced Group ACH home loan advisor. We evaluate your profile, compare 70+ bank rates, and manage your complete application with doorstep service.
+            Speak directly with an experienced Group ACH home loan advisor. We evaluate your profile, compare bank rates, and manage your complete application with doorstep service.
           </p>
           <div className="pt-2 flex flex-wrap items-center justify-center gap-4">
             <button

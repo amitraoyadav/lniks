@@ -172,13 +172,13 @@ export const LoanOffersPage: React.FC<LoanOffersPageProps> = ({
           </h1>
 
           <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Compare zero-processing-fee schemes, repo-linked rate discounts, and high LTV financing negotiated across 70+ partner banks. Terms & Conditions: Nil.
+            Compare zero-processing-fee schemes, repo-linked rate options, and structured financing across leading partner banks and NBFCs. Terms & Conditions: Nil.
           </p>
 
           {/* Quick Stats Bar */}
           <div className="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto">
             <div className="p-3.5 rounded-2xl bg-white border border-slate-200 shadow-2xs">
-              <span className="text-[10px] uppercase font-bold text-slate-400 block">Lowest Rate</span>
+              <span className="text-[10px] uppercase font-bold text-slate-400 block">Starting Rates</span>
               <span className="text-xl font-extrabold text-emerald-700 font-mono">8.40% p.a.</span>
             </div>
             <div className="p-3.5 rounded-2xl bg-white border border-slate-200 shadow-2xs">
@@ -376,7 +376,7 @@ export const LoanOffersPage: React.FC<LoanOffersPageProps> = ({
             <div className="bg-white p-5 rounded-2xl border border-slate-200 space-y-2">
               <span className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold text-xs flex items-center justify-center">2</span>
               <h4 className="font-bold text-sm text-slate-900">Multi-Bank Negotiation</h4>
-              <p className="text-xs text-slate-600">We simultaneously present your file to 70+ lenders to extract the lowest spread.</p>
+              <p className="text-xs text-slate-600">We evaluate your file across multiple lenders to identify competitive spreads.</p>
             </div>
             <div className="bg-white p-5 rounded-2xl border border-slate-200 space-y-2">
               <span className="w-8 h-8 rounded-full bg-slate-900 text-white font-bold text-xs flex items-center justify-center">3</span>

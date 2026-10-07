@@ -68,7 +68,7 @@ export const Footer: React.FC<FooterProps> = ({
             </div>
 
             <p className="text-xs text-slate-300 leading-relaxed max-w-sm">
-              Connecting home buyers and commercial property owners with 70+ top Indian banks and NBFCs for lowest interest rates, maximum loan eligibility, and door-step document assistance.
+              Connecting home buyers and property owners with leading Indian banks and NBFCs for competitive interest rates, suitable financing options, and doorstep document assistance.
             </p>
 
             <div className="pt-2 flex flex-wrap items-center gap-3">
@@ -109,7 +109,7 @@ export const Footer: React.FC<FooterProps> = ({
                   }}
                   className="hover:text-white transition-colors text-emerald-400 font-semibold"
                 >
-                  Loans in Bangalore (70+ Banks)
+                  Loans in Bangalore
                 </a>
               </li>
               <li>

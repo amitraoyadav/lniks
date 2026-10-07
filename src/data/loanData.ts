@@ -128,7 +128,7 @@ export const PRODUCTS_DATA: LoanProduct[] = [
     maxTenureYears: 30,
     maxLtv: 'Up to 90% of Agreement Value',
     description:
-      'Whether you are purchasing a new ready-to-move apartment, constructing an independent villa, or transferring an existing high-cost home loan for lower EMIs, Group ACH connects you with 70+ partner banks for optimal rate sanctioning and fast-track processing.',
+      'Whether you are purchasing a new ready-to-move apartment, constructing an independent villa, or transferring an existing high-cost home loan for lower EMIs, Group ACH connects you with leading partner banks and NBFCs for competitive rate options and streamlined processing.',
     variants: [
       {
         title: 'New Home Purchase Loan',
@@ -249,9 +249,9 @@ export const PRODUCTS_DATA: LoanProduct[] = [
 
 export const TRUST_PILLARS = [
   {
-    title: '70+ Banks & NBFCs',
-    highlight: 'Maximum Approval Chance',
-    description: 'We match your specific income and property profile to the exact lending institution with the highest sanction probability.',
+    title: 'Leading Banks & NBFCs',
+    highlight: 'Comprehensive Network',
+    description: 'We match your specific income and property profile to the exact lending institution suited to your profile.',
   },
   {
     title: 'Door-Step Document Service',
@@ -259,14 +259,14 @@ export const TRUST_PILLARS = [
     description: 'Our dedicated loan advisors collect your paperwork from your home or office and manage all bank liaison end-to-end.',
   },
   {
-    title: 'Maximum Eligibility & LTV',
-    highlight: 'Optimized Loan Amount',
-    description: 'We structure co-applicants, rental income, and business depreciation to unlock the highest permissible loan amount.',
+    title: 'Optimized Eligibility & LTV',
+    highlight: 'Structured Assessment',
+    description: 'We structure co-applicants, rental income, and business financials to help you understand your maximum permissible borrowing capacity.',
   },
   {
-    title: '100% Transparent Process',
-    highlight: 'Secure Cost-Free Consultation',
-    description: 'No hidden charges or surprise deductions. We negotiate processing fee waivers and competitive ROI directly for you.',
+    title: 'Transparent Advisory Process',
+    highlight: 'Secure Consultation',
+    description: 'No hidden charges or surprise deductions. We help you compare processing fees and ROI directly across lenders.',
   },
 ];
 
@@ -283,13 +283,13 @@ export const HOW_IT_WORKS_STEPS = [
   },
   {
     step: '03',
-    title: 'Multi-Bank Rate Negotiation',
-    description: 'We present your application across our 70+ partner banking ecosystem to negotiate the lowest interest rate and maximum loan sanction.',
+    title: 'Multi-Bank Negotiation',
+    description: 'We present your application across our partner banking network to evaluate competitive interest rates and suitable loan terms.',
   },
   {
     step: '04',
-    title: 'Sanction & Fast Disbursement',
-    description: 'Receive your formal sanction letter within 3 to 7 working days, followed by legal/technical clearance and direct account disbursement.',
+    title: 'Sanction & Disbursement',
+    description: 'Receive your formal sanction letter within standard processing timelines, followed by legal/technical clearance and loan disbursement.',
   },
 ];
 
@@ -329,7 +329,7 @@ export const TESTIMONIALS = [
 export const FAQ_LIST = [
   {
     q: 'How does Group ACH help me get a better loan rate than applying directly at a bank?',
-    a: 'When you apply directly at a single bank branch, you are limited to their fixed internal rate card and strict single-lender risk parameters. Group ACH operates as an authorized loan channel partner connected to 70+ leading public, private banks and NBFCs. Because we originate high loan volumes monthly, we have access to priority processing desks, special rate concessions, processing fee waivers, and customized valuation norms that individual retail walk-in applicants cannot access.',
+    a: 'When you apply directly at a single bank branch, you are limited to their fixed internal rate card and strict single-lender risk parameters. Group ACH operates as an authorized loan channel partner connected to leading public, private banks and NBFCs. We help you navigate priority processing channels, evaluate rate options, and review documentation norms across institutions.',
   },
   {
     q: 'Does Group ACH charge any upfront service fees to borrowers?',

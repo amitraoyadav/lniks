@@ -502,7 +502,7 @@ export default function App() {
                 onNavigate={handleNavigate}
               />
 
-              {/* 70+ Partner Banks & Financial Institutions Ecosystem */}
+              {/* Partner Banks & Financial Institutions Ecosystem */}
               <BankPartners
                 onSelectBankQuote={(bankName) =>
                   handleOpenApplyModal('home_loan', `Quote preference: ${bankName}`)

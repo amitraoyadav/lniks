@@ -162,7 +162,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 }}
                 className="inline-flex items-center justify-center gap-2 px-4.5 py-3 text-sm font-semibold text-sky-200 bg-sky-950/80 hover:bg-sky-900/90 border border-sky-800/80 rounded-xl transition-colors whitespace-nowrap"
               >
-                <span>Loans in Bangalore (70+ Banks)</span>
+                <span>Loans in Bangalore</span>
                 <ArrowRight className="w-4 h-4 text-sky-400" />
               </a>
 
@@ -203,8 +203,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                     <Award className="w-4 h-4" />
                   </div>
                   <div>
-                    <div className="text-xs font-bold text-white">Max Loan LTV</div>
-                    <div className="text-[11px] text-slate-400">Up to 90% Funding</div>
+                    <div className="text-xs font-bold text-white">Optimized LTV</div>
+                    <div className="text-[11px] text-slate-400">Up to Standard Norms</div>
                   </div>
                 </div>
 
@@ -224,15 +224,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Quick stats bar */}
             <div className="flex flex-wrap items-center gap-6 text-xs text-slate-400 pt-1">
               <div>
-                <span className="font-bold text-white text-sm">70+</span> Partner Banks
+                <span className="font-bold text-white text-sm">Multi-Lender</span> Advisory Network
               </div>
               <span className="text-slate-700">·</span>
               <div>
-                <span className="font-bold text-white text-sm">Starting 8.35%*</span> Rates
+                <span className="font-bold text-white text-sm">Competitive</span> Rates
               </div>
               <span className="text-slate-700">·</span>
               <div>
-                <span className="font-bold text-white text-sm">₹500+ Cr</span> Disbursal Network
+                <span className="font-bold text-white text-sm">Institutional</span> Lender Partners
               </div>
               <span className="text-slate-700">·</span>
               <div className="text-emerald-400 font-semibold flex items-center gap-1">

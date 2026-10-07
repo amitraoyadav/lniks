@@ -130,7 +130,7 @@ export const GuidesPage: React.FC<GuidesPageProps> = ({
       faqs: [
         {
           q: 'Can I get a home loan if my reported ITR is low compared to actual cash flow?',
-          a: 'Yes. Several of our 70+ partner institutions offer Banking Surrogate, GST Turnover, and Liquid Income Assessment schemes that evaluate actual bank account deposits and business margins rather than reported net profit alone.',
+          a: 'Yes. Several of our partner institutions offer Banking Surrogate, GST Turnover, and Liquid Income Assessment schemes that evaluate actual bank account deposits and business margins rather than reported net profit alone.',
         },
         {
           q: 'What is the maximum loan tenure for self-employed applicants?',
@@ -360,7 +360,7 @@ export const GuidesPage: React.FC<GuidesPageProps> = ({
             Have Questions About Your Loan Profile?
           </h3>
           <p className="text-xs text-slate-300 max-w-xl mx-auto leading-relaxed">
-            Our certified loan advisors evaluate your specific income documents, resolve credit bottlenecks, and coordinate with 70+ partner banks for priority approval.
+            Our certified loan advisors evaluate your specific income documents, resolve credit bottlenecks, and coordinate with partner banks and NBFCs for structured evaluation.
           </p>
           <div className="pt-2 flex flex-wrap items-center justify-center gap-4">
             <button
