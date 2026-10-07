@@ -244,7 +244,7 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
                         {link.desc}
                       </p>
                       <span className="font-mono text-[10px] text-slate-400 block mt-1">
-                        https://achlinks.in{link.path}
+                        https://www.achlinks.in{link.path}
                       </span>
                     </div>
                   ))}

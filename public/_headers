@@ -1,4 +1,4 @@
-# Netlify HTTP Response Headers for Group ACH (https://achlinks.in/)
+# Netlify HTTP Response Headers for Group ACH (https://www.achlinks.in/)
 # Configured so Meta (Facebook) crawler (facebookexternalhit) and social bots are never blocked
 
 # Global Security & Crawler Friendly Headers

@@ -1,7 +1,7 @@
 import { LeadFormData } from '../types';
 
 /**
- * EXACT GOOGLE APPS SCRIPT WEB APP ENDPOINT FOR GROUP ACH (https://achlinks.in/)
+ * EXACT GOOGLE APPS SCRIPT WEB APP ENDPOINT FOR GROUP ACH (https://www.achlinks.in/)
  * The ONLY endpoint used for submitting website leads to Google Sheets.
  * Direct POST via URLSearchParams • No Google OAuth • No docs.google.com direct writes
  */
@@ -56,7 +56,7 @@ export async function submitLeadToGoogleSheets(lead: LeadFormData): Promise<{
       : `Requested Loan: ${formattedAmt}`;
   }
 
-  const pageUrl = typeof window !== 'undefined' ? window.location.href : 'https://achlinks.in/';
+  const pageUrl = typeof window !== 'undefined' ? window.location.href : 'https://www.achlinks.in/';
 
   // Use URLSearchParams as required
   const body = new URLSearchParams();

@@ -1,5 +1,5 @@
 /**
- * SEO Manager for Group ACH (https://achlinks.in/)
+ * SEO Manager for Group ACH (https://www.achlinks.in/)
  * Dynamically handles document head meta tags, canonical links, OpenGraph,
  * Twitter cards, and Schema.org structured data (JSON-LD) across all routes.
  */
@@ -17,7 +17,7 @@ export interface PageSeoConfig {
   breadcrumbs?: { name: string; path: string }[];
 }
 
-export const BASE_URL = 'https://achlinks.in';
+export const BASE_URL = 'https://www.achlinks.in';
 
 export const SITE_SEO_REGISTRY: Record<string, PageSeoConfig> = {
   '/': {
@@ -49,7 +49,7 @@ export const SITE_SEO_REGISTRY: Record<string, PageSeoConfig> = {
       provider: {
         '@type': 'FinancialService',
         name: 'Group ACH',
-        url: 'https://achlinks.in/',
+        url: 'https://www.achlinks.in/',
       },
       areaServed: 'Bangalore, Karnataka, India',
       description:
@@ -90,7 +90,7 @@ export const SITE_SEO_REGISTRY: Record<string, PageSeoConfig> = {
       provider: {
         '@type': 'FinancialService',
         name: 'Group ACH',
-        url: 'https://achlinks.in/',
+        url: 'https://www.achlinks.in/',
       },
       areaServed: 'Bangalore, Karnataka, India',
       description:
@@ -267,7 +267,7 @@ export const SITE_SEO_REGISTRY: Record<string, PageSeoConfig> = {
       provider: {
         '@type': 'FinancialService',
         name: 'Group ACH',
-        url: 'https://achlinks.in/',
+        url: 'https://www.achlinks.in/',
       },
     },
   },
@@ -297,7 +297,7 @@ export const SITE_SEO_REGISTRY: Record<string, PageSeoConfig> = {
       },
       telephone: '+919482537337',
       email: 'achgrouplink@gmail.com',
-      url: 'https://achlinks.in/home-loan-bengaluru',
+      url: 'https://www.achlinks.in/home-loan-bengaluru',
       priceRange: '₹0 (Free Advisory)',
     },
   },

@@ -1,3 +1,7 @@
+https://achlinks.in/*           https://www.achlinks.in/:splat   301!
+http://achlinks.in/*            https://www.achlinks.in/:splat   301!
+https://www.www.achlinks.in/*   https://www.achlinks.in/:splat   301!
+http://www.www.achlinks.in/*    https://www.achlinks.in/:splat   301!
 /robots.txt    /robots.txt    200
 /sitemap.xml   /sitemap.xml   200
 /*             /index.html    200

@@ -1,4 +1,4 @@
-# Netlify Configuration for Group ACH (https://achlinks.in/)
+# Netlify Configuration for Group ACH (https://www.achlinks.in/)
 # Optimized for Vite + React SPA, Meta (Facebook) Crawler & Social Link Previews
 
 [build]
@@ -54,10 +54,28 @@
   to = "/404.html"
   status = 404
 
-# 3. CANONICAL REDIRECT: www -> non-www (https://achlinks.in)
+# 3. CANONICAL REDIRECT: non-www & double-www -> www (https://www.achlinks.in)
 [[redirects]]
-  from = "https://www.achlinks.in/*"
-  to = "https://achlinks.in/:splat"
+  from = "https://achlinks.in/*"
+  to = "https://www.achlinks.in/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://achlinks.in/*"
+  to = "https://www.achlinks.in/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.www.achlinks.in/*"
+  to = "https://www.achlinks.in/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.www.achlinks.in/*"
+  to = "https://www.achlinks.in/:splat"
   status = 301
   force = true
 

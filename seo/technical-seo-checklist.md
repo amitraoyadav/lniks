@@ -1,5 +1,5 @@
 # Group ACH Technical SEO & Search Engine Console Master Checklist
-**Domain**: https://achlinks.in/  
+**Domain**: https://www.achlinks.in/  
 **Brand**: Group ACH / ACH Links  
 **Industry**: Home Loan & Loan Against Property Advisory  
 **Target Geo**: Delhi, Delhi NCR, and Pan-India Doorstep Presence  
@@ -8,7 +8,7 @@
 
 ## 1. Technical SEO & Crawlability Baseline
 
-- [x] **robots.txt**: Configured at `/robots.txt` with unrestricted crawling for major search bots (Googlebot, Bingbot), explicit CSS/JS resource access, and dynamic sitemap reference `https://achlinks.in/sitemap.xml`.
+- [x] **robots.txt**: Configured at `/robots.txt` with unrestricted crawling for major search bots (Googlebot, Bingbot), explicit CSS/JS resource access, and dynamic sitemap reference `https://www.achlinks.in/sitemap.xml`.
 - [x] **XML Sitemap**: Canonical sitemap deployed at `/sitemap.xml` with indexable URLs, ISO-8601 timestamps, priority weights, and change frequencies.
 - [x] **Self-Referential Canonical Tags**: Every indexable page includes an explicit `<link rel="canonical" href="..." />` matching its canonical HTTPS URL to prevent duplicate content dilution.
 - [x] **Viewport & Mobile-First**: Verified `<meta name="viewport" content="width=device-width, initial-scale=1.0" />` with responsive layout scaling across all modern mobile viewports (360px–1920px+).
@@ -41,12 +41,12 @@
 
 1. **Domain Property Verification**:
    - Add Domain property `achlinks.in` in Google Search Console via DNS TXT record for full coverage across HTTP, HTTPS, `www`, and non-`www` protocols.
-   - Alternatively, add URL-prefix property `https://achlinks.in/` using HTML tag or Firebase hosting verification.
+   - Alternatively, add URL-prefix property `https://www.achlinks.in/` using HTML tag or Firebase hosting verification.
 2. **Sitemap Submission**:
-   - Navigate to **Sitemaps** in GSC and submit `https://achlinks.in/sitemap.xml`.
+   - Navigate to **Sitemaps** in GSC and submit `https://www.achlinks.in/sitemap.xml`.
    - Verify that Googlebot reports Status: **Success** with all submitted URLs recognized.
 3. **URL Inspection**:
-   - Inspect `https://achlinks.in/` and click **Test Live URL**.
+   - Inspect `https://www.achlinks.in/` and click **Test Live URL**.
    - Confirm Googlebot Smartphone can render the page without blocked resources.
    - Check mobile usability and structured data parsing.
 4. **Core Web Vitals Monitoring**:
@@ -100,8 +100,8 @@ gtag('event', 'contact_form_submit', {
 
 ### Canonical Handling:
 Paid advertising URLs containing UTM tags or tracking parameters must always point their canonical tag to the pristine base URL:
-- Request: `https://achlinks.in/home-loan?utm_source=google&utm_medium=cpc&utm_campaign=delhi_home_loan&utm_term=home+loan+consultant`
-- Canonical: `https://achlinks.in/home-loan`
+- Request: `https://www.achlinks.in/home-loan?utm_source=google&utm_medium=cpc&utm_campaign=delhi_home_loan&utm_term=home+loan+consultant`
+- Canonical: `https://www.achlinks.in/home-loan`
 
 ### Recommended UTM Taxonomy:
 | Platform | Parameter | Recommended Value Format | Example |
@@ -122,7 +122,7 @@ Paid advertising URLs containing UTM tags or tracking parameters must always poi
 - **Legal Business Name**: Group ACH (Operating domain: `achlinks.in`)
 - **Address Line**: Connaught Place / South Delhi Central Hub, New Delhi, Delhi 110001
 - **Direct Advisory Hotline**: +91-94825-37337
-- **Official Domain**: https://achlinks.in/
+- **Official Domain**: https://www.achlinks.in/
 - **Google Business Profile (GBP) Recommendations**:
   1. Claim or optimize primary GBP listing as "Group ACH - Home Loan & Loan Against Property Consultant".
   2. Set category to **Mortgage Broker** (Primary) and **Loan Agency** / **Financial Consultant** (Secondary).

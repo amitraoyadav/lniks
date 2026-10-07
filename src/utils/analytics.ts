@@ -1,6 +1,6 @@
 /**
  * Google Analytics 4 (GA4), Meta Pixel & Ad Campaign Tracking Utility
- * Group ACH (https://achlinks.in/)
+ * Group ACH (https://www.achlinks.in/)
  */
 
 export interface UtmParams {

@@ -1,6 +1,6 @@
-# SEO Studio AI: Master Production Blueprint for https://achlinks.in/
+# SEO Studio AI: Master Production Blueprint for https://www.achlinks.in/
 **Brand**: Group ACH / ACH Links  
-**Primary Domain**: https://achlinks.in/  
+**Primary Domain**: https://www.achlinks.in/  
 **Niche**: Home Loan & Loan Against Property (LAP) Advisory  
 **Target Market**: Delhi, Delhi NCR (Gurugram, Noida, Ghaziabad, Faridabad) & Pan-India Metros  
 **Primary Audiences**: Salaried Professionals (MNC/Govt/IT), Self-Employed Business Owners & MSMEs, Existing Mortgage Borrowers  

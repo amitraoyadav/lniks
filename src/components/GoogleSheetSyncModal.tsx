@@ -297,8 +297,8 @@ export const GoogleSheetSyncModal: React.FC<GoogleSheetSyncModalProps> = ({
       `"${l.loanType === 'home_loan' ? 'Home Loan' : 'Loan Against Property'}"`,
       `"${l.loanAmount || ''}"`,
       `"${(l.message || l.propertyType || '').replace(/"/g, '""')}"`,
-      `"${l.utmSource || l.leadSource || 'achlinks.in'}"`,
-      `"https://achlinks.in/"`,
+      `"${l.utmSource || l.leadSource || 'www.achlinks.in'}"`,
+      `"https://www.achlinks.in/"`,
       `"${l.syncedToSheet ? 'Synced' : 'Queued'}"`,
     ]);
 
@@ -498,7 +498,7 @@ export const GoogleSheetSyncModal: React.FC<GoogleSheetSyncModalProps> = ({
                       </div>
                       <p className="text-xs text-slate-600 mt-0.5">
                         {isLocked && activeUrl
-                          ? 'All incoming leads from https://achlinks.in/ are automatically dispatched to your /exec endpoint.'
+                          ? 'All incoming leads from https://www.achlinks.in/ are automatically dispatched to your /exec endpoint.'
                           : 'Configure your Google Apps Script Web App URL below to begin receiving leads in your spreadsheet.'}
                       </p>
                     </div>
@@ -870,7 +870,7 @@ export const GoogleSheetSyncModal: React.FC<GoogleSheetSyncModalProps> = ({
             <div className="space-y-6">
               <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl flex items-center justify-between">
                 <div>
-                  <h4 className="font-bold text-slate-900 text-sm">achlinks.in Search Engine & Indexing Status</h4>
+                  <h4 className="font-bold text-slate-900 text-sm">www.achlinks.in Search Engine & Indexing Status</h4>
                   <p className="text-xs text-slate-600 mt-0.5">
                     Google Search Console verification tag active in &lt;head&gt; • XML Sitemap with 22 canonical URLs
                   </p>
@@ -946,7 +946,7 @@ export const GoogleSheetSyncModal: React.FC<GoogleSheetSyncModalProps> = ({
                     <div key={r.path} className="p-2.5 flex items-center justify-between hover:bg-slate-50">
                       <div>
                         <span className="font-semibold text-slate-900">{r.name}</span>
-                        <span className="ml-2 font-mono text-[11px] text-slate-500">https://achlinks.in{r.path}</span>
+                        <span className="ml-2 font-mono text-[11px] text-slate-500">https://www.achlinks.in{r.path}</span>
                       </div>
                       <div className="flex items-center space-x-3 text-slate-600">
                         <span className="text-[11px] bg-slate-100 px-2 py-0.5 rounded font-mono">P: {r.priority}</span>

@@ -291,7 +291,7 @@ export const FlyersSection: React.FC = () => {
                   </div>
 
                   <a
-                    href={buildWhatsAppLink(`Hello Group ACH, I reviewed the ${flyer.category} on achlinks.in and would like to apply.`)}
+                    href={buildWhatsAppLink(`Hello Group ACH, I reviewed the ${flyer.category} on www.achlinks.in and would like to apply.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white transition-colors shadow-sm"
