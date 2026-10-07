@@ -68,7 +68,7 @@ export const SITE_SEO_REGISTRY: Record<string, PageSeoConfig> = {
   '/home-loan': {
     title: 'Home Loan Consultant & Advisory in Bangalore | Group ACH',
     description:
-      'Compare home loan options across 70+ partner banks and NBFCs in Bangalore. Get doorstep assistance, documentation support, and customized mortgage advice with Group ACH.',
+      'Compare home loan options across leading partner banks and NBFCs in Bangalore. Get doorstep assistance, documentation support, and customized mortgage advice with Group ACH.',
     canonicalPath: '/home-loan',
     h1: 'Home Loan Advisory & Comparative Financing in Bangalore',
     keywords:
@@ -91,7 +91,7 @@ export const SITE_SEO_REGISTRY: Record<string, PageSeoConfig> = {
     },
   },
   '/home-loan/bangalore': {
-    title: 'Home Loan in Bangalore: Compare 70+ Banks & NBFCs | Group ACH',
+    title: 'Home Loan in Bangalore: Compare Bank & NBFC Options | Group ACH',
     description:
       'Looking for a home loan in Bangalore? Group ACH assists with BBMP A-Khata, B-Khata, and BDA approved properties across Whitefield, Jayanagar, Electronic City, and more.',
     canonicalPath: '/home-loan/bangalore',
@@ -117,6 +117,44 @@ export const SITE_SEO_REGISTRY: Record<string, PageSeoConfig> = {
       },
       telephone: '+91-94825-37337',
       url: 'https://www.achlinks.in/home-loan/bangalore',
+      priceRange: '₹0 (Free Advisory)',
+    },
+  },
+  '/loans-in-bangalore': {
+    title: 'Loans in Bangalore | Home Loan & LAP Advisory | Group ACH',
+    description:
+      'Explore home loans, loan against property and other financing options in Bangalore. Get guidance on eligibility, documents, rates and lenders with Group ACH.',
+    canonicalPath: '/loans-in-bangalore',
+    h1: 'Loans in Bangalore - Home Loans, LAP & Financing Advisory',
+    keywords:
+      'loans in Bangalore, home loan Bangalore, home loan in Bangalore, loan against property Bangalore, business loan Bangalore, personal loan Bangalore, mortgage loan Bangalore, home finance Bangalore, Bengaluru loans',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Loans in Bangalore', path: '/loans-in-bangalore' },
+    ],
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'FinancialService',
+      name: 'Group ACH - Loans in Bangalore Advisory Desk',
+      url: 'https://www.achlinks.in/loans-in-bangalore',
+      telephone: '+91-94825-37337',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'PO 1102, 4th T Block East Jayanagar, 3rd Block Jayanagar',
+        addressLocality: 'Bangalore',
+        addressRegion: 'Karnataka',
+        postalCode: '560011',
+        addressCountry: 'IN',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: '12.9716',
+        longitude: '77.5946',
+      },
+      areaServed: [
+        { '@type': 'City', name: 'Bangalore' },
+        { '@type': 'City', name: 'Bengaluru' },
+      ],
       priceRange: '₹0 (Free Advisory)',
     },
   },
@@ -566,10 +604,10 @@ export const ROUTE_ALIASES: Record<string, string> = {
   '/property-loan': '/loan-against-property',
   '/mortgage-loan': '/loan-against-property',
   '/blog': '/blogs',
-  '/loans-in-bangalore': '/home-loan/bangalore',
-  '/loans-in-bengaluru': '/home-loan/bangalore',
-  '/loans-bangalore': '/home-loan/bangalore',
-  '/bangalore-loans': '/home-loan/bangalore',
+  '/loans-in-bengaluru': '/loans-in-bangalore',
+  '/loans-bangalore': '/loans-in-bangalore',
+  '/bangalore-loans': '/loans-in-bangalore',
+  '/loans-in-banglore': '/loans-in-bangalore',
   // Blog aliases
   '/blog/home-loan-eligibility-criteria-guide': '/blogs/home-loan-eligibility-bangalore',
   '/blog/complete-documents-checklist-home-loan': '/blogs/documents-required-for-home-loan',
@@ -611,7 +649,12 @@ export function applyPageSeo(path: string, customConfig?: Partial<PageSeoConfig>
     robotsMeta.setAttribute('name', 'robots');
     document.head.appendChild(robotsMeta);
   }
-  robotsMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
+  const isInternal = cleanPath === '/seo-manager' || cleanPath === '/seo' || cleanPath === '/serp';
+  if (isInternal) {
+    robotsMeta.setAttribute('content', 'noindex, nofollow');
+  } else {
+    robotsMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
+  }
 
   // Canonical Link: strictly https://www.achlinks.in/...
   let canonicalLink = document.querySelector('link[rel="canonical"]');

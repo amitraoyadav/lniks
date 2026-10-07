@@ -128,14 +128,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <span className="font-mono text-sky-400">{BRAND_CONFIG.domain}</span>
             </div>
 
-            {/* Headline Idea from brief: "Get the Best Home & Property Loan Rates with Expert Guidance." */}
+            {/* Headline */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.15] text-balance">
-              Best Loans in Bangalore: Get the Lowest <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-300 to-emerald-300">Home &amp; Property Loan Rates</span> Across 70+ Banks.
+              Home Loan &amp; Property Finance Advisory: Compare <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-300 to-emerald-300">Leading Lenders in Bangalore</span> with Expert Guidance.
             </h1>
 
-            {/* Sub-headline from brief: "Connecting you to 70+ top banks and financial institutions for fast approvals." */}
+            {/* Sub-headline */}
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl font-normal">
-              Looking for a Home Loan or LAP in Bangalore? <strong className="text-white font-semibold">Group ACH</strong> connects you with 70+ top banks and NBFCs for lowest interest rates (starting 8.35%*), maximum LTV eligibility, and free doorstep service across all Bangalore zones.
+              Looking for a Home Loan or LAP in Bangalore? <strong className="text-white font-semibold">Group ACH</strong> connects you with leading partner banks and NBFCs for competitive interest rates, transparent eligibility guidance, and free doorstep service across all Bangalore zones.
             </p>
 
             {/* Direct action buttons */}

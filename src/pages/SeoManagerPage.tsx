@@ -360,24 +360,19 @@ export const SeoManagerPage: React.FC<SeoManagerPageProps> = ({ onNavigate }) =>
 
                 {/* Google Title */}
                 <h4 className="text-lg sm:text-xl font-medium text-[#1a0dab] hover:underline cursor-pointer leading-snug">
-                  Loans in Bangalore: Compare 70+ Banks &amp; Lowest Rates | Group ACH
+                  Loans in Bangalore | Home Loan &amp; LAP Advisory | Group ACH
                 </h4>
 
-                {/* Star Rating Rich Snippet */}
+                {/* Rich Snippet Details */}
                 <div className="flex items-center gap-2 text-[11px] text-slate-600">
-                  <div className="flex items-center text-amber-500">
-                    {'★★★★★'}
-                  </div>
-                  <span className="font-bold text-slate-800">Rating: 4.9</span>
-                  <span>·</span>
-                  <span>480+ Google Reviews</span>
+                  <span className="font-bold text-slate-800">Bangalore &amp; Bengaluru</span>
                   <span>·</span>
                   <span className="text-emerald-700 font-medium">Free Doorstep Advisory (₹0)</span>
                 </div>
 
                 {/* Snippet Description */}
                 <p className="text-xs sm:text-sm text-[#4d5156] leading-relaxed">
-                  Looking for the best <strong className="text-slate-900 font-bold">loans in Bangalore</strong>? Group ACH connects you with 70+ banks &amp; NBFCs for lowest interest rates (starting 8.35%), highest LTV eligibility, and 100% free doorstep service across all Bangalore zones.
+                  Explore home loans, loan against property and other financing options in Bangalore. Get guidance on eligibility, documents, rates and lenders with Group ACH.
                 </p>
 
                 {/* Google Sitelinks */}

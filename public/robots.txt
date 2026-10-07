@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /seo-manager
+Disallow: /seo
+Disallow: /serp
 
 User-agent: facebookexternalhit
 Allow: /

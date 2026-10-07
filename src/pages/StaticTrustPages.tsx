@@ -269,7 +269,7 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onOpenApplyModal, onNavigate }
     },
     {
       q: 'How does Group ACH help me obtain a lower interest rate?',
-      a: 'Group ACH compares floating repo-linked spreads across 70+ partner banks and NBFCs simultaneously to present you with the lowest rate and lowest processing fees.',
+      a: 'Group ACH compares floating repo-linked spreads across leading partner banks and NBFCs to present you with competitive interest rates and suitable processing fee terms.',
     },
     {
       q: 'Can I prepay or foreclose my home loan without penalty?',

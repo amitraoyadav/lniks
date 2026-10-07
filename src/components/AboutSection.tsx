@@ -57,7 +57,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenApplyModal }) 
                   <span>Borrower-First Philosophy</span>
                 </div>
                 <p className="text-xs text-slate-600">
-                  Zero consulting charges to clients. We recommend lenders strictly based on who offers you the lowest rate and fastest sanction.
+                  Zero consulting charges to clients. We recommend lenders strictly based on who offers you the most competitive terms and suitable sanction structure.
                 </p>
               </div>
 

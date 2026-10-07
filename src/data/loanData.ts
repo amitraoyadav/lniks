@@ -123,7 +123,7 @@ export const PRODUCTS_DATA: LoanProduct[] = [
     id: 'home-loan',
     title: 'Home Loans',
     type: 'home_loan',
-    tagline: 'Your dream home made effortless with lowest rates & up to 90% funding.',
+    tagline: 'Your dream home made effortless with competitive rates & comprehensive funding support.',
     interestRateStarting: '8.35% p.a.',
     maxTenureYears: 30,
     maxLtv: 'Up to 90% of Agreement Value',
