@@ -20,11 +20,13 @@ import { AchIconMark } from './AchLogo';
 interface HeroSectionProps {
   onLeadSuccess: (data: LeadFormData) => Promise<{ success: boolean; message: string }> | void;
   onOpenCalculator: () => void;
+  onNavigate?: (path: string) => void;
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
   onLeadSuccess,
   onOpenCalculator,
+  onNavigate,
 }) => {
   const [loanType, setLoanType] = useState<LoanType>('home_loan');
   const [fullName, setFullName] = useState('');
@@ -128,12 +130,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             {/* Headline Idea from brief: "Get the Best Home & Property Loan Rates with Expert Guidance." */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.15] text-balance">
-              Get the Best <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-300 to-emerald-300">Home & Property Loan Rates</span> with Expert Guidance.
+              Best Loans in Bangalore: Get the Lowest <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-sky-300 to-emerald-300">Home &amp; Property Loan Rates</span> Across 70+ Banks.
             </h1>
 
             {/* Sub-headline from brief: "Connecting you to 70+ top banks and financial institutions for fast approvals." */}
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl font-normal">
-              Connecting you to <strong className="text-white font-semibold">70+ top banks and financial institutions</strong> for fast approvals. We negotiate optimal interest rates, maximum loan eligibility, and door-step paperwork pickup with zero advisory charges.
+              Looking for a Home Loan or LAP in Bangalore? <strong className="text-white font-semibold">Group ACH</strong> connects you with 70+ top banks and NBFCs for lowest interest rates (starting 8.35%*), maximum LTV eligibility, and free doorstep service across all Bangalore zones.
             </p>
 
             {/* Direct action buttons */}
@@ -150,12 +152,25 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <span>Secured Line Chat</span>
               </a>
 
+              <a
+                href="/loans-in-bangalore"
+                onClick={(e) => {
+                  if (onNavigate) {
+                    e.preventDefault();
+                    onNavigate('/loans-in-bangalore');
+                  }
+                }}
+                className="inline-flex items-center justify-center gap-2 px-4.5 py-3 text-sm font-semibold text-sky-200 bg-sky-950/80 hover:bg-sky-900/90 border border-sky-800/80 rounded-xl transition-colors whitespace-nowrap"
+              >
+                <span>Loans in Bangalore (70+ Banks)</span>
+                <ArrowRight className="w-4 h-4 text-sky-400" />
+              </a>
+
               <button
                 onClick={onOpenCalculator}
-                className="inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold text-slate-200 bg-slate-800/90 hover:bg-slate-700 border border-slate-700 rounded-xl transition-colors whitespace-nowrap"
+                className="inline-flex items-center justify-center gap-2 px-4 py-3 text-sm font-semibold text-slate-300 bg-slate-800/80 hover:bg-slate-700 border border-slate-700/80 rounded-xl transition-colors whitespace-nowrap"
               >
-                <span>Calculate My EMI</span>
-                <ArrowRight className="w-4 h-4 text-sky-400" />
+                <span>Calculate EMI</span>
               </button>
             </div>
 

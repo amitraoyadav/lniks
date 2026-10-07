@@ -100,6 +100,20 @@ export const Footer: React.FC<FooterProps> = ({
             <ul className="space-y-2 text-xs">
               <li>
                 <a
+                  href="/loans-in-bangalore"
+                  onClick={(e) => {
+                    if (onNavigate) {
+                      e.preventDefault();
+                      onNavigate('/loans-in-bangalore');
+                    }
+                  }}
+                  className="hover:text-white transition-colors text-emerald-400 font-semibold"
+                >
+                  Loans in Bangalore (70+ Banks)
+                </a>
+              </li>
+              <li>
+                <a
                   href="/home-loan"
                   onClick={(e) => {
                     if (onNavigate) {

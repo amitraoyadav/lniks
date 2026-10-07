@@ -72,6 +72,11 @@ export const SitemapPage: React.FC<SitemapPageProps> = ({ onNavigate }) => {
       color: 'text-blue-700 bg-blue-50 border-blue-200',
       links: [
         {
+          title: 'Loans in Bangalore: Compare 70+ Banks (Primary Hub)',
+          path: '/loans-in-bangalore',
+          desc: 'Comprehensive Bangalore lending: Home Loans, LAP, Business Loans, 70+ partner banks & free doorstep service.',
+        },
+        {
           title: 'Bengaluru Home Loan Advisory (Headquarters)',
           path: '/home-loan-bengaluru',
           desc: 'Local Bangalore lending: Jayanagar, Whitefield, Indiranagar, BBMP A/B-Khata & BDA approvals.',

@@ -18,6 +18,15 @@
 
   <!-- 2. Primary Service Hubs & Special Offers -->
   <url>
+    <loc>https://www.achlinks.in/loans-in-bangalore</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/loans-in-bangalore" />
+    <xhtml:link rel="alternate" hreflang="hi-IN" href="https://www.achlinks.in/loans-in-bangalore" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/loans-in-bangalore" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://www.achlinks.in/loan-offers</loc>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/loan-offers" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/loan-offers" />
@@ -237,5 +246,45 @@
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blog/loans-in-bangalore-guide-rates-banks</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog/loans-in-bangalore-guide-rates-banks" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog/loans-in-bangalore-guide-rates-banks" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blog/how-to-get-lowest-loan-interest-rates-bangalore</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog/how-to-get-lowest-loan-interest-rates-bangalore" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog/how-to-get-lowest-loan-interest-rates-bangalore" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blog/bbmp-khata-property-loan-approval-bangalore</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog/bbmp-khata-property-loan-approval-bangalore" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog/bbmp-khata-property-loan-approval-bangalore" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blog/business-loans-vs-lap-bangalore-msmes</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog/business-loans-vs-lap-bangalore-msmes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog/business-loans-vs-lap-bangalore-msmes" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.achlinks.in/blog/home-loan-balance-transfer-bangalore-savings</loc>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.achlinks.in/blog/home-loan-balance-transfer-bangalore-savings" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.achlinks.in/blog/home-loan-balance-transfer-bangalore-savings" />
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
 </urlset>

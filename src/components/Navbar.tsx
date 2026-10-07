@@ -108,23 +108,36 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenApplyModal, onNavigate }) 
               Loan Against Property
             </a>
             <a
-              href="/home-loan-bengaluru"
+              href="/loans-in-bangalore"
               onClick={(e) => {
                 if (onNavigate) {
                   e.preventDefault();
-                  onNavigate('/home-loan-bengaluru');
+                  onNavigate('/loans-in-bangalore');
+                }
+              }}
+              className="text-emerald-800 hover:text-emerald-950 transition-colors font-semibold flex items-center gap-1"
+            >
+              <span>Loans in Bangalore</span>
+              <span className="px-1.5 py-0.2 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-bold">Top</span>
+            </a>
+            <a
+              href="/home-loan/bangalore"
+              onClick={(e) => {
+                if (onNavigate) {
+                  e.preventDefault();
+                  onNavigate('/home-loan/bangalore');
                 }
               }}
               className="hover:text-[#1C1917] transition-colors"
             >
-              Bangalore
+              Advisory
             </a>
             <a
-              href="/home-loan-eligibility"
+              href="/home-loan/eligibility"
               onClick={(e) => {
                 if (onNavigate) {
                   e.preventDefault();
-                  onNavigate('/home-loan-eligibility');
+                  onNavigate('/home-loan/eligibility');
                 }
               }}
               className="hover:text-[#1C1917] transition-colors"
@@ -132,16 +145,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenApplyModal, onNavigate }) 
               Eligibility
             </a>
             <a
-              href="/blog"
+              href="/blogs"
               onClick={(e) => {
                 if (onNavigate) {
                   e.preventDefault();
-                  onNavigate('/blog');
+                  onNavigate('/blogs');
                 }
               }}
               className="hover:text-[#1C1917] transition-colors"
             >
-              Guides
+              Blogs
             </a>
             <a
               href="/about"
@@ -170,7 +183,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenApplyModal, onNavigate }) 
           </nav>
 
           {/* Zone 3: 1-2 primary actions */}
-          <div className="hidden sm:flex items-center gap-3">
+          <div className="hidden sm:flex items-center gap-2.5">
             <button
               onClick={() => onOpenApplyModal()}
               className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-[#85673E] hover:bg-[#735730] rounded-lg transition-colors shadow-sm whitespace-nowrap"
@@ -228,6 +241,20 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenApplyModal, onNavigate }) 
             >
               <span>Special Loan Offers (2026)</span>
               <span className="text-[10px] px-2 py-0.5 rounded-full bg-amber-200">New</span>
+            </a>
+            <a
+              href="/loans-in-bangalore"
+              onClick={(e) => {
+                if (onNavigate) {
+                  e.preventDefault();
+                  onNavigate('/loans-in-bangalore');
+                }
+                setMobileMenuOpen(false);
+              }}
+              className="px-3 py-2 rounded-md bg-emerald-50 text-emerald-900 font-bold hover:bg-emerald-100 transition-colors flex items-center justify-between"
+            >
+              <span>Loans in Bangalore (70+ Banks)</span>
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-200">#1</span>
             </a>
             <a
               href="/home-loan-bengaluru"

@@ -42,7 +42,16 @@ import { AboutPage, ContactPage, FaqPage } from './pages/StaticTrustPages';
 import { BlogHubPage } from './pages/BlogHubPage';
 import { LoanOffersPage } from './pages/LoanOffersPage';
 import { BengaluruLocationPage } from './pages/BengaluruLocationPage';
+import { LoansInBangalorePage } from './pages/LoansInBangalorePage';
+import { SeoManagerPage } from './pages/SeoManagerPage';
 import { SitemapPage } from './pages/SitemapPage';
+import {
+  BusinessLoanPage,
+  PersonalLoanPage,
+  LapEligibilityPage,
+  LoanEmiCalculatorPage,
+  HomeLoanInterestRatesPage,
+} from './pages/AdditionalLoanPages';
 
 export default function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -251,10 +260,37 @@ export default function App() {
           }
 
           if (
+            norm === '/loans-in-bangalore' ||
+            norm === '/loans-in-bengaluru' ||
+            norm === '/loans-bangalore' ||
+            norm === '/bangalore-loans' ||
+            norm === '/loans-in-banglore'
+          ) {
+            return (
+              <LoansInBangalorePage
+                onOpenApplyModal={handleOpenApplyModal}
+                onNavigate={handleNavigate}
+              />
+            );
+          }
+
+          if (
+            norm === '/seo-manager' ||
+            norm === '/seo' ||
+            norm === '/serp'
+          ) {
+            return (
+              <SeoManagerPage
+                onNavigate={handleNavigate}
+                onOpenApplyModal={() => handleOpenApplyModal()}
+              />
+            );
+          }
+
+          if (
+            norm === '/home-loan/bangalore' ||
             norm === '/home-loan-bengaluru' ||
             norm === '/home-loan-bangalore' ||
-            norm === '/loan-against-property-bangalore' ||
-            norm === '/loan-against-property-bengaluru' ||
             norm === '/bangalore' ||
             norm === '/bengaluru'
           ) {
@@ -266,7 +302,20 @@ export default function App() {
             );
           }
 
-          if (norm === '/home-loan-eligibility') {
+          if (
+            norm === '/loan-against-property/bangalore' ||
+            norm === '/loan-against-property-bangalore' ||
+            norm === '/loan-against-property-bengaluru'
+          ) {
+            return (
+              <BengaluruLocationPage
+                onOpenApplyModal={handleOpenApplyModal}
+                onNavigate={handleNavigate}
+              />
+            );
+          }
+
+          if (norm === '/home-loan/eligibility' || norm === '/home-loan-eligibility') {
             return (
               <GuidesPage
                 type="eligibility"
@@ -276,7 +325,22 @@ export default function App() {
             );
           }
 
-          if (norm === '/home-loan-documents') {
+          if (
+            norm === '/home-loan/emi-calculator' ||
+            norm === '/loan-emi-calculator'
+          ) {
+            return (
+              <LoanEmiCalculatorPage
+                onOpenApplyModal={handleOpenApplyModal}
+                onNavigate={handleNavigate}
+              />
+            );
+          }
+
+          if (
+            norm === '/home-loan/documents-required' ||
+            norm === '/home-loan-documents'
+          ) {
             return (
               <GuidesPage
                 type="documents"
@@ -286,11 +350,50 @@ export default function App() {
             );
           }
 
-          if (norm === '/home-loan-balance-transfer') {
+          if (norm === '/home-loan/interest-rates') {
+            return (
+              <HomeLoanInterestRatesPage
+                onOpenApplyModal={() => handleOpenApplyModal()}
+                onNavigate={handleNavigate}
+              />
+            );
+          }
+
+          if (
+            norm === '/home-loan/balance-transfer' ||
+            norm === '/home-loan-balance-transfer'
+          ) {
             return (
               <GuidesPage
                 type="balance_transfer"
                 onOpenApplyModal={handleOpenApplyModal}
+                onNavigate={handleNavigate}
+              />
+            );
+          }
+
+          if (norm === '/business-loan') {
+            return (
+              <BusinessLoanPage
+                onOpenApplyModal={handleOpenApplyModal}
+                onNavigate={handleNavigate}
+              />
+            );
+          }
+
+          if (norm === '/personal-loan') {
+            return (
+              <PersonalLoanPage
+                onOpenApplyModal={() => handleOpenApplyModal()}
+                onNavigate={handleNavigate}
+              />
+            );
+          }
+
+          if (norm === '/lap-eligibility') {
+            return (
+              <LapEligibilityPage
+                onOpenApplyModal={() => handleOpenApplyModal()}
                 onNavigate={handleNavigate}
               />
             );
@@ -343,8 +446,15 @@ export default function App() {
             );
           }
 
-          if (norm === '/blog' || norm.startsWith('/blog/')) {
-            const slug = norm.startsWith('/blog/')
+          if (
+            norm === '/blogs' ||
+            norm === '/blog' ||
+            norm.startsWith('/blogs/') ||
+            norm.startsWith('/blog/')
+          ) {
+            const slug = norm.startsWith('/blogs/')
+              ? norm.replace('/blogs/', '')
+              : norm.startsWith('/blog/')
               ? norm.replace('/blog/', '')
               : undefined;
             return (
@@ -389,6 +499,7 @@ export default function App() {
               <HeroSection
                 onLeadSuccess={handleLeadSuccess}
                 onOpenCalculator={scrollToCalculator}
+                onNavigate={handleNavigate}
               />
 
               {/* 70+ Partner Banks & Financial Institutions Ecosystem */}

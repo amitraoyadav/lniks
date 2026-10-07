@@ -1,7 +1,8 @@
 /**
  * SEO Manager for Group ACH (https://www.achlinks.in/)
+ * Strictly enforces canonical URL: https://www.achlinks.in/
  * Dynamically handles document head meta tags, canonical links, OpenGraph,
- * Twitter cards, and Schema.org structured data (JSON-LD) across all routes.
+ * Twitter cards, BreadcrumbList, and Schema.org structured data (JSON-LD).
  */
 
 export interface PageSeoConfig {
@@ -20,24 +21,58 @@ export interface PageSeoConfig {
 export const BASE_URL = 'https://www.achlinks.in';
 
 export const SITE_SEO_REGISTRY: Record<string, PageSeoConfig> = {
+  // 1. Homepage
   '/': {
-    title: 'Home Loan & LAP Consultant in Bangalore | Group ACH',
+    title: 'Home Loan & Loan Against Property Consultant in Bangalore | Group ACH',
     description:
-      'Looking for a Home Loan or LAP in Bangalore? Group ACH connects you with 70+ banks & NBFCs for lowest rates & doorstep service.',
+      'Get expert assistance for home loans, loan against property and other financing options in Bangalore. Compare suitable lenders, eligibility, documentation and repayment options with Group ACH.',
     canonicalPath: '/',
-    h1: 'Home Loan & Loan Against Property Assistance in Bangalore',
+    h1: 'Home Loan & Loan Against Property Consultant in Bangalore',
     keywords:
-      'home loan consultant Bangalore, home loan advisor Bangalore, loan against property consultant Bangalore, property loan Bangalore, mortgage loan, home loan eligibility, home loan balance transfer, Group ACH',
+      'home loan consultant Bangalore, home loan advisor Bangalore, home loan in Bangalore, loan against property Bangalore, property loan Bangalore, mortgage loan Bangalore, home loan eligibility Bangalore, Group ACH, achlinks',
     breadcrumbs: [{ name: 'Home', path: '/' }],
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'FinancialService',
+      name: 'Group ACH',
+      alternateName: ['Group ACH Financial Advisory', 'ACH Links'],
+      url: 'https://www.achlinks.in/',
+      logo: 'https://www.achlinks.in/logo.png',
+      image: 'https://www.achlinks.in/og-image.jpg',
+      telephone: '+91-94825-37337',
+      email: 'achgrouplink@gmail.com',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'PO 1102, 4th T Block East Jayanagar, 3rd Block Jayanagar',
+        addressLocality: 'Bangalore',
+        addressRegion: 'Karnataka',
+        postalCode: '560011',
+        addressCountry: 'IN',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: '12.9716',
+        longitude: '77.5946',
+      },
+      areaServed: [
+        { '@type': 'City', name: 'Bangalore' },
+        { '@type': 'City', name: 'Bengaluru' },
+      ],
+      priceRange: '₹0 (Free Advisory)',
+      description:
+        'Independent loan advisory firm in Bangalore connecting borrowers with institutional lenders and NBFCs for home loans and loan against property.',
+    },
   },
+
+  // 2. Primary Product & City Pages
   '/home-loan': {
-    title: 'Best Home Loan Rates & Advisory in Bangalore | Group ACH',
+    title: 'Home Loan Consultant & Advisory in Bangalore | Group ACH',
     description:
-      'Compare top bank home loan rates in Bangalore starting from benchmark rates. Get instant sanction guidance across 70+ lenders.',
+      'Compare home loan options across 70+ partner banks and NBFCs in Bangalore. Get doorstep assistance, documentation support, and customized mortgage advice with Group ACH.',
     canonicalPath: '/home-loan',
-    h1: 'Home Loan Advisory & Lowest Interest Rates in Bangalore',
+    h1: 'Home Loan Advisory & Comparative Financing in Bangalore',
     keywords:
-      'home loan Bangalore, home loan assistance, home loan rates, apply home loan, home loan in Bangalore, home loan advisor Bangalore',
+      'home loan Bangalore, home loan assistance, home loan rates, apply home loan, home loan consultant Bangalore, housing loan Bangalore',
     breadcrumbs: [
       { name: 'Home', path: '/' },
       { name: 'Home Loan', path: '/home-loan' },
@@ -45,40 +80,126 @@ export const SITE_SEO_REGISTRY: Record<string, PageSeoConfig> = {
     schema: {
       '@context': 'https://schema.org',
       '@type': 'Service',
-      name: 'Home Loan Advisory & Processing',
+      name: 'Home Loan Advisory',
       provider: {
         '@type': 'FinancialService',
         name: 'Group ACH',
         url: 'https://www.achlinks.in/',
       },
       areaServed: 'Bangalore, Karnataka, India',
-      description:
-        'End-to-end home loan comparison, doorstep document pick up, rate negotiation, and priority sanction across 70+ partner banks.',
       serviceType: 'Mortgage Advisory',
     },
   },
-  '/home-loan-consultant': {
-    title: 'Expert Home Loan Consultant in Bangalore | Group ACH',
+  '/home-loan/bangalore': {
+    title: 'Home Loan in Bangalore: Compare 70+ Banks & NBFCs | Group ACH',
     description:
-      'Consult top home loan advisors at Group ACH in Bangalore. We negotiate with 70+ banks for fastest sanction, lowest spread & maximum LTV.',
-    canonicalPath: '/home-loan-consultant',
-    h1: 'Independent Home Loan Consultant for Top Banks & NBFCs',
+      'Looking for a home loan in Bangalore? Group ACH assists with BBMP A-Khata, B-Khata, and BDA approved properties across Whitefield, Jayanagar, Electronic City, and more.',
+    canonicalPath: '/home-loan/bangalore',
+    h1: 'Home Loan Solutions & Doorstep Advisory Across Bangalore',
     keywords:
-      'home loan consultant, home loan advisor, home loan agent, mortgage consultant Bangalore, best home loan consultant Bangalore',
+      'home loan in Bangalore, home loan Bangalore, home loan Bengaluru, home loan consultant Bangalore, home loan advisor Bangalore, housing loan Bangalore',
     breadcrumbs: [
       { name: 'Home', path: '/' },
       { name: 'Home Loan', path: '/home-loan' },
-      { name: 'Home Loan Consultant', path: '/home-loan-consultant' },
+      { name: 'Bangalore', path: '/home-loan/bangalore' },
+    ],
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'LocalBusiness',
+      name: 'Group ACH - Bangalore Home Loan Desk',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'PO 1102, 4th T Block East Jayanagar, 3rd Block Jayanagar',
+        addressLocality: 'Bangalore',
+        addressRegion: 'Karnataka',
+        postalCode: '560011',
+        addressCountry: 'IN',
+      },
+      telephone: '+91-94825-37337',
+      url: 'https://www.achlinks.in/home-loan/bangalore',
+      priceRange: '₹0 (Free Advisory)',
+    },
+  },
+  '/home-loan/eligibility': {
+    title: 'Home Loan Eligibility Criteria & Calculator | Group ACH',
+    description:
+      'Understand FOIR requirements, net salary multipliers, CIBIL score benchmarks, and methods to assess and improve your home loan eligibility with Group ACH.',
+    canonicalPath: '/home-loan/eligibility',
+    h1: 'Home Loan Eligibility Criteria: Assess Your Borrowing Capacity',
+    keywords:
+      'home loan eligibility, home loan eligibility Bangalore, foir calculation, salary multiplier home loan, home loan criteria',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Home Loan', path: '/home-loan' },
+      { name: 'Eligibility', path: '/home-loan/eligibility' },
     ],
   },
-  '/loan-against-property': {
-    title: 'Loan Against Property (LAP) Advisory & Rates in Bangalore | Group ACH',
+  '/home-loan/emi-calculator': {
+    title: 'Home Loan EMI Calculator: Monthly Repayment Estimator | Group ACH',
     description:
-      'Unlock up to 75% market value of residential or commercial property with Loan Against Property advisory in Bangalore.',
+      'Calculate your monthly home loan EMI, total interest payable, and amortization schedule across different loan tenures and benchmark interest rates.',
+    canonicalPath: '/home-loan/emi-calculator',
+    h1: 'Interactive Home Loan EMI Calculator',
+    keywords:
+      'home loan emi calculator, home loan emi Bangalore, housing loan emi calculator, loan installment calculator',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Home Loan', path: '/home-loan' },
+      { name: 'EMI Calculator', path: '/home-loan/emi-calculator' },
+    ],
+  },
+  '/home-loan/documents-required': {
+    title: 'Documents Required for Home Loan: Complete Checklist | Group ACH',
+    description:
+      'Comprehensive checklist of required KYC, income proofs, bank statements, and Bangalore property title deeds for smooth home loan processing.',
+    canonicalPath: '/home-loan/documents-required',
+    h1: 'Complete Checklist of Documents Required for Home Loan',
+    keywords:
+      'home loan documents, documents required for home loan, Bangalore property documents, home loan paperwork',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Home Loan', path: '/home-loan' },
+      { name: 'Documents Required', path: '/home-loan/documents-required' },
+    ],
+  },
+  '/home-loan/interest-rates': {
+    title: 'Home Loan Interest Rates in Bangalore (2026 Comparison) | Group ACH',
+    description:
+      'Compare benchmark repo-linked home loan interest rates, floating spreads, and loan terms across leading Indian public, private, and housing finance companies.',
+    canonicalPath: '/home-loan/interest-rates',
+    h1: 'Home Loan Interest Rates in Bangalore (2026 Benchmark Guide)',
+    keywords:
+      'home loan interest rates Bangalore, home loan interest rates, repo linked lending rate, bank home loan rates',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Home Loan', path: '/home-loan' },
+      { name: 'Interest Rates', path: '/home-loan/interest-rates' },
+    ],
+  },
+  '/home-loan/balance-transfer': {
+    title: 'Home Loan Balance Transfer: Refinance & Lower Your EMI | Group ACH',
+    description:
+      'Explore transferring your existing home loan to a more competitive rate. Calculate break-even periods, top-up options, and hassle-free takeover guidance.',
+    canonicalPath: '/home-loan/balance-transfer',
+    h1: 'Home Loan Balance Transfer Assistance & Interest Savings',
+    keywords:
+      'home loan balance transfer, home loan balance transfer Bangalore, switch home loan bank, lower home loan emi',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Home Loan', path: '/home-loan' },
+      { name: 'Balance Transfer', path: '/home-loan/balance-transfer' },
+    ],
+  },
+
+  // 3. Loan Against Property
+  '/loan-against-property': {
+    title: 'Loan Against Property (LAP) Advisory in Bangalore | Group ACH',
+    description:
+      'Unlock liquidity against residential or commercial property in Bangalore. Compare loan-to-value options, repayment tenures, and mortgage solutions with Group ACH.',
     canonicalPath: '/loan-against-property',
     h1: 'Loan Against Property (LAP) - Unlock Equity From Your Real Estate',
     keywords:
-      'loan against property Bangalore, loan against property consultant, property loan, mortgage loan Bangalore, commercial property loan, residential lap Bangalore',
+      'loan against property Bangalore, loan against property consultant, property loan, mortgage loan Bangalore, residential lap, commercial lap',
     breadcrumbs: [
       { name: 'Home', path: '/' },
       { name: 'Loan Against Property', path: '/loan-against-property' },
@@ -86,120 +207,91 @@ export const SITE_SEO_REGISTRY: Record<string, PageSeoConfig> = {
     schema: {
       '@context': 'https://schema.org',
       '@type': 'Service',
-      name: 'Loan Against Property (LAP) Advisory',
+      name: 'Loan Against Property Advisory',
       provider: {
         '@type': 'FinancialService',
         name: 'Group ACH',
         url: 'https://www.achlinks.in/',
       },
       areaServed: 'Bangalore, Karnataka, India',
-      description:
-        'Mortgage financing against freehold residential, commercial, or industrial properties with high loan-to-value structuring and low interest rates in Bangalore.',
       serviceType: 'Property Mortgage Loan',
     },
   },
-  '/loan-against-property-bangalore': {
-    title: 'Loan Against Property in Bangalore: Highest LTV | Group ACH',
+  '/loan-against-property/bangalore': {
+    title: 'Loan Against Property in Bangalore: Commercial & Residential | Group ACH',
     description:
-      'Get Loan Against Property in Bangalore with transparent valuation, high LTV & door-step processing for residential & commercial units.',
-    canonicalPath: '/loan-against-property-bangalore',
+      'Secured property mortgage advisory across Bangalore. Leverage commercial units, residential villas, or industrial properties with doorstep consultation.',
+    canonicalPath: '/loan-against-property/bangalore',
     h1: 'Loan Against Property in Bangalore for Residential & Commercial Assets',
     keywords:
-      'loan against property in Bangalore, loan against property consultant Bangalore, property loan Bangalore, commercial LAP Bangalore',
+      'loan against property Bangalore, LAP loan Bangalore, loan against property consultant Bangalore, property loan Bangalore, loan against property Bengaluru',
     breadcrumbs: [
       { name: 'Home', path: '/' },
       { name: 'Loan Against Property', path: '/loan-against-property' },
-      { name: 'Bangalore', path: '/loan-against-property-bangalore' },
+      { name: 'Bangalore', path: '/loan-against-property/bangalore' },
     ],
   },
-  '/home-loan-bangalore': {
-    title: 'Home Loan in Bangalore: Compare 70+ Banks | Group ACH',
+  '/lap-eligibility': {
+    title: 'Loan Against Property Eligibility & LTV Guidelines | Group ACH',
     description:
-      'Get the best Home Loan in Bangalore for BBMP A-Khata, B-Khata, and BDA approved properties. Doorstep assistance & legal checks.',
-    canonicalPath: '/home-loan-bangalore',
-    h1: 'Home Loan Solutions & Advisory Across Bangalore',
+      'Detailed guide to property valuation criteria, Loan-to-Value (LTV) limits, debt-service coverage, and title requirements for Loan Against Property.',
+    canonicalPath: '/lap-eligibility',
+    h1: 'Loan Against Property Eligibility & Valuation Guidelines',
     keywords:
-      'home loan in Bangalore, home loan consultant in Bangalore, home loan advisor in Bangalore, home loan Jayanagar, home loan Whitefield',
+      'lap eligibility, loan against property eligibility, ltv criteria, mortgage loan eligibility',
     breadcrumbs: [
       { name: 'Home', path: '/' },
-      { name: 'Home Loan', path: '/home-loan' },
-      { name: 'Home Loan Bangalore', path: '/home-loan-bangalore' },
+      { name: 'Loan Against Property', path: '/loan-against-property' },
+      { name: 'Eligibility', path: '/lap-eligibility' },
     ],
   },
-  '/home-loan-eligibility': {
-    title: 'Home Loan Eligibility Calculator & Criteria | Group ACH',
+
+  // 4. Business & Personal Loans
+  '/business-loan': {
+    title: 'Business Loan & Commercial Financing in Bangalore | Group ACH',
     description:
-      'Understand FOIR, salary multiplier, CIBIL score requirements & methods to boost your home loan eligibility with Group ACH advisors.',
-    canonicalPath: '/home-loan-eligibility',
-    h1: 'Home Loan Eligibility Criteria: Calculate Maximum Borrowing Power',
+      'Explore MSME working capital, business expansion loans, and commercial property mortgage credit with doorstep advisory across Bangalore.',
+    canonicalPath: '/business-loan',
+    h1: 'Business Loan & Commercial Mortgage Financing in Bangalore',
     keywords:
-      'home loan eligibility, home loan eligibility criteria, foir calculation, how to improve home loan eligibility, home loan calculator',
+      'business loan Bangalore, business loan consultant Bangalore, msme loan Bangalore, commercial property loan',
     breadcrumbs: [
       { name: 'Home', path: '/' },
-      { name: 'Home Loan', path: '/home-loan' },
-      { name: 'Eligibility Guide', path: '/home-loan-eligibility' },
+      { name: 'Business Loan', path: '/business-loan' },
     ],
   },
-  '/home-loan-documents': {
-    title: 'Home Loan Documents Checklist for Borrowers | Group ACH',
+  '/personal-loan': {
+    title: 'Personal Loan Advisory & Secured Financing in Bangalore | Group ACH',
     description:
-      'Complete checklist of documents required for Home Loan approval in India. KYC, income proofs, property chain & sanction requisites.',
-    canonicalPath: '/home-loan-documents',
-    h1: 'Complete Home Loan Documents Required Checklist',
+      'Need immediate personal financing in Bangalore? Compare salaried personal loans and explore cost-effective property top-up loan alternatives.',
+    canonicalPath: '/personal-loan',
+    h1: 'Personal Loan Guidance & Financing Alternatives in Bangalore',
     keywords:
-      'home loan documents, documents required for home loan, home loan paperwork, property chain documents, ITR for home loan',
+      'personal loan Bangalore, salaried loan Bangalore, personal loan advisor Bangalore, quick financing',
     breadcrumbs: [
       { name: 'Home', path: '/' },
-      { name: 'Home Loan', path: '/home-loan' },
-      { name: 'Documents Checklist', path: '/home-loan-documents' },
+      { name: 'Personal Loan', path: '/personal-loan' },
     ],
   },
-  '/home-loan-balance-transfer': {
-    title: 'Home Loan Balance Transfer: Reduce EMI | Group ACH',
+  '/loan-emi-calculator': {
+    title: 'Loan EMI Calculator: Estimate Installments Online | Group ACH',
     description:
-      'Transfer your existing home loan to a lower interest rate. Calculate interest savings, top-up eligibility & smooth takeover.',
-    canonicalPath: '/home-loan-balance-transfer',
-    h1: 'Home Loan Balance Transfer Assistance & Interest Savings',
+      'Interactive loan calculator to estimate monthly installments and total interest outlays for home loans, property loans, and business financing.',
+    canonicalPath: '/loan-emi-calculator',
+    h1: 'Comprehensive Loan EMI Calculator',
     keywords:
-      'home loan balance transfer, home loan transfer, lower home loan emi, home loan top up, switch home loan bank',
+      'loan emi calculator, emi calculator, loan installment calculator, interest calculation',
     breadcrumbs: [
       { name: 'Home', path: '/' },
-      { name: 'Home Loan', path: '/home-loan' },
-      { name: 'Balance Transfer', path: '/home-loan-balance-transfer' },
+      { name: 'EMI Calculator', path: '/loan-emi-calculator' },
     ],
   },
-  '/home-loan-for-salaried': {
-    title: 'Home Loan for Salaried Employees: Low Rates | Group ACH',
-    description:
-      'Exclusive home loan advisory for salaried professionals in MNCs, IT & government. Enjoy minimal documentation & low spreads.',
-    canonicalPath: '/home-loan-for-salaried',
-    h1: 'Home Loan for Salaried Professionals in MNCs & Government',
-    keywords:
-      'home loan for salaried, home loan for salaried person, salaried home loan interest rate, corporate employee home loan',
-    breadcrumbs: [
-      { name: 'Home', path: '/' },
-      { name: 'Home Loan', path: '/home-loan' },
-      { name: 'For Salaried', path: '/home-loan-for-salaried' },
-    ],
-  },
-  '/home-loan-for-self-employed': {
-    title: 'Home Loan for Self Employed & Business | Group ACH',
-    description:
-      'Specialized home loan structuring for self-employed professionals & SME owners based on GST, turnover & banking surrogates.',
-    canonicalPath: '/home-loan-for-self-employed',
-    h1: 'Home Loan Solutions for Self-Employed & Business Proprietors',
-    keywords:
-      'home loan for self employed, home loan for business owner, banking surrogate loan, self employed mortgage',
-    breadcrumbs: [
-      { name: 'Home', path: '/' },
-      { name: 'Home Loan', path: '/home-loan' },
-      { name: 'For Self-Employed', path: '/home-loan-for-self-employed' },
-    ],
-  },
+
+  // 5. Trust & E-E-A-T Pages
   '/about': {
-    title: 'About Group ACH: 70+ Partner Institutions | ACH Links',
+    title: 'About Group ACH: Institutional Loan Connector & Advisory',
     description:
-      'Learn about Group ACH\'s mission, leadership, multi-bank network & customer-first loan advisory with zero upfront fees.',
+      'Learn about Group ACH\'s mission, authorized channel partnership with 70+ financial institutions, transparent advisory, and Bangalore leadership.',
     canonicalPath: '/about',
     h1: 'About Group ACH - Transparent Loan Connecting Advisory',
     keywords: 'about group ach, ach links, authorized loan connector, group ach leadership',
@@ -209,118 +301,290 @@ export const SITE_SEO_REGISTRY: Record<string, PageSeoConfig> = {
     ],
   },
   '/contact': {
-    title: 'Contact Group ACH: Direct Advisory Hotline | ACH Links',
+    title: 'Contact Group ACH: Bangalore Home Loan Advisory Hotline',
     description:
-      'Connect with Group ACH loan specialists for doorstep service, secured line chat advice & customized mortgage quotes in Bangalore.',
+      'Connect with Group ACH mortgage advisors in Jayanagar, Bangalore. Get doorstep consultation, WhatsApp inquiry support, and clear loan guidance.',
     canonicalPath: '/contact',
     h1: 'Contact Group ACH Loan Specialists',
-    keywords:
-      'contact group ach, home loan advisor near me, home loan consultation bangalore, achlinks contact',
+    keywords: 'contact group ach, loan advisor Bangalore, home loan consultant near me, achlinks contact',
     breadcrumbs: [
       { name: 'Home', path: '/' },
       { name: 'Contact Us', path: '/contact' },
     ],
   },
   '/faq': {
-    title: 'Frequently Asked Questions: Home Loans | Group ACH',
+    title: 'Frequently Asked Questions: Home Loans & Property Loans | Group ACH',
     description:
-      'Answers to common questions regarding home loan approval, interest rate calculation, CIBIL impact, foreclosure & documents.',
+      'Clear answers to common questions on home loan eligibility, documentation, CIBIL score requirements, interest calculations, and doorstep service.',
     canonicalPath: '/faq',
-    h1: 'Home Loan & Property Finance Knowledge Base',
-    keywords: 'home loan faqs, loan against property questions, mortgage query India, cibil query',
+    h1: 'Frequently Asked Questions About Loans & Mortgages',
+    keywords: 'home loan faqs, loan against property questions, mortgage query India',
     breadcrumbs: [
       { name: 'Home', path: '/' },
       { name: 'FAQs', path: '/faq' },
     ],
   },
-  '/blog': {
-    title: 'Home Loan & Property Finance Guides | Group ACH Blog',
+  '/blogs': {
+    title: 'Home Loan & Property Finance Knowledge Hub | Group ACH Blogs',
     description:
-      'Expert insights, regulatory updates, tax saving tips & smart borrowing strategies written by seasoned mortgage consultants.',
-    canonicalPath: '/blog',
+      'Educational guides, regulatory updates, borrowing strategies, and property finance insights authored by seasoned mortgage advisors at Group ACH.',
+    canonicalPath: '/blogs',
     h1: 'Mortgage Insights, Rate Trends & Home Loan Guides',
-    keywords:
-      'home loan blog, mortgage guides India, property finance articles, home loan tips',
+    keywords: 'home loan blog, mortgage guides India, property finance articles, home loan tips',
     breadcrumbs: [
       { name: 'Home', path: '/' },
-      { name: 'Blog Hub', path: '/blog' },
+      { name: 'Blogs', path: '/blogs' },
     ],
-  },
-  '/loan-offers': {
-    title: 'Best Home Loan Offers 2026: 0% Fee & Lowest Rates | Group ACH',
-    description:
-      'Compare exclusive bank home loan offers in 2026. Zero processing fees, repo-linked discounts from 8.40%, and high LTV funding across 70+ partner banks.',
-    canonicalPath: '/loan-offers',
-    h1: 'Best Home Loan & LAP Special Offers (2026)',
-    keywords:
-      'home loan offers 2026, lowest home loan rate, sbi home loan offer, hdfc loan offer, loan against property offer, zero processing fee home loan',
-    breadcrumbs: [
-      { name: 'Home', path: '/' },
-      { name: 'Special Loan Offers', path: '/loan-offers' },
-    ],
-    schema: {
-      '@context': 'https://schema.org',
-      '@type': 'SpecialAnnouncement',
-      name: 'Special Concession Home Loan & Property Financing Offers 2026',
-      category: 'https://schema.org/Finance',
-      text: 'Special home loan interest rates starting 8.40% onwards with zero processing fee waivers across top partner banks.',
-      provider: {
-        '@type': 'FinancialService',
-        name: 'Group ACH',
-        url: 'https://www.achlinks.in/',
-      },
-    },
-  },
-  '/home-loan-bengaluru': {
-    title: 'Home Loan in Bengaluru: Best Rates & Doorstep Advisory | Group ACH',
-    description:
-      'Get lowest home loan & LAP rates in Bengaluru from our Jayanagar headquarters. BBMP A-Khata, B-Khata, and BDA approved project loans across 70+ banks.',
-    canonicalPath: '/home-loan-bengaluru',
-    h1: 'Best Home Loan & LAP Advisory in Bengaluru',
-    keywords:
-      'home loan Bengaluru, home loan Bangalore, home loan consultant Jayanagar, property loan Whitefield, BBMP A Khata loan, Group ACH Bengaluru',
-    breadcrumbs: [
-      { name: 'Home', path: '/' },
-      { name: 'Bengaluru', path: '/home-loan-bengaluru' },
-    ],
-    schema: {
-      '@context': 'https://schema.org',
-      '@type': 'LocalBusiness',
-      name: 'Group ACH - Bengaluru Headquarters',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'PO 1102, 4th T Block East Jayanagar, 3rd Block Jayanagar',
-        addressLocality: 'Bengaluru',
-        postalCode: '560011',
-        addressRegion: 'Karnataka',
-        addressCountry: 'IN',
-      },
-      telephone: '+919482537337',
-      email: 'achgrouplink@gmail.com',
-      url: 'https://www.achlinks.in/home-loan-bengaluru',
-      priceRange: '₹0 (Free Advisory)',
-    },
   },
   '/sitemap': {
-    title: 'HTML Sitemap & Complete Website Directory | Group ACH',
+    title: 'Website Directory & Sitemap | Group ACH',
     description:
-      'Browse all home loan products, special offers, city landing pages, borrowing guides, calculators, and official flyers on Group ACH.',
+      'Comprehensive HTML sitemap and directory of all home loan products, Bangalore services, calculators, borrower guides, and official contacts.',
     canonicalPath: '/sitemap',
-    h1: 'Group ACH Website Directory & Search Index',
+    h1: 'Group ACH Website Directory & Site Index',
     keywords: 'group ach sitemap, home loan directory, property loan index',
     breadcrumbs: [
       { name: 'Home', path: '/' },
       { name: 'Sitemap', path: '/sitemap' },
     ],
   },
+
+  // 6. The 15 Requested In-Depth Guides
+  '/blogs/how-to-apply-home-loan-bangalore': {
+    title: 'How to Apply for a Home Loan in Bangalore: Step-by-Step Guide | Group ACH',
+    description:
+      'A practical step-by-step roadmap to applying for a home loan in Bangalore—from credit check and property due diligence to bank comparison and final disbursal.',
+    canonicalPath: '/blogs/how-to-apply-home-loan-bangalore',
+    h1: 'How to Apply for a Home Loan in Bangalore: Step-by-Step Borrower Guide',
+    keywords: 'how to apply home loan bangalore, apply home loan bangalore, home loan process bangalore',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Blogs', path: '/blogs' },
+      { name: 'Apply Home Loan Guide', path: '/blogs/how-to-apply-home-loan-bangalore' },
+    ],
+  },
+  '/blogs/home-loan-eligibility-bangalore': {
+    title: 'Home Loan Eligibility in Bangalore: FOIR & Salary Multipliers | Group ACH',
+    description:
+      'Learn how banks evaluate net monthly income, existing debt obligations (FOIR), CIBIL score, and salary multipliers to calculate your borrowing limit.',
+    canonicalPath: '/blogs/home-loan-eligibility-bangalore',
+    h1: 'Home Loan Eligibility in Bangalore: FOIR, Salary Multipliers & Co-Borrower Rules',
+    keywords: 'home loan eligibility bangalore, calculate home loan eligibility, foir ratio',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Blogs', path: '/blogs' },
+      { name: 'Eligibility Guide', path: '/blogs/home-loan-eligibility-bangalore' },
+    ],
+  },
+  '/blogs/documents-required-for-home-loan': {
+    title: 'Documents Required for a Home Loan: Complete Checklist | Group ACH',
+    description:
+      'Exhaustive paperwork checklist for salaried employees, business proprietors, and property title vetting to prevent sanction rejections.',
+    canonicalPath: '/blogs/documents-required-for-home-loan',
+    h1: 'Documents Required for a Home Loan: Salaried & Self-Employed Checklist',
+    keywords: 'documents required for home loan, home loan documents, home loan papers checklist',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Blogs', path: '/blogs' },
+      { name: 'Documents Checklist', path: '/blogs/documents-required-for-home-loan' },
+    ],
+  },
+  '/blogs/how-home-loan-emi-calculated': {
+    title: 'How Home Loan EMI Is Calculated: Formula & Amortization | Group ACH',
+    description:
+      'Understand the mathematical formula behind Equated Monthly Installments (EMI), how interest vs principal shifts over time, and tenure impacts.',
+    canonicalPath: '/blogs/how-home-loan-emi-calculated',
+    h1: 'How Home Loan EMI Is Calculated: Formula, Amortization & Practical Examples',
+    keywords: 'how home loan emi is calculated, emi formula, loan amortization',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Blogs', path: '/blogs' },
+      { name: 'EMI Calculation Guide', path: '/blogs/how-home-loan-emi-calculated' },
+    ],
+  },
+  '/blogs/fixed-vs-floating-home-loan-interest-rates': {
+    title: 'Fixed vs Floating Home Loan Interest Rates: Which Is Best? | Group ACH',
+    description:
+      'Comparison of fixed and floating home loan interest rates in India covering market cycles, repo rate transmission, and prepayment penalty rules.',
+    canonicalPath: '/blogs/fixed-vs-floating-home-loan-interest-rates',
+    h1: 'Fixed vs Floating Home Loan Interest Rates: Which Is Best for Your Mortgage?',
+    keywords: 'fixed vs floating home loan interest rates, floating interest rate home loan',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Blogs', path: '/blogs' },
+      { name: 'Fixed vs Floating', path: '/blogs/fixed-vs-floating-home-loan-interest-rates' },
+    ],
+  },
+  '/blogs/home-loan-balance-transfer-guide': {
+    title: 'Home Loan Balance Transfer: When Does It Make Sense? | Group ACH',
+    description:
+      'How transferring your ongoing home loan to a lower rate can save lakhs in interest, when to refinance, and break-even calculations.',
+    canonicalPath: '/blogs/home-loan-balance-transfer-guide',
+    h1: 'Home Loan Balance Transfer: When Does It Make Sense to Switch Lenders?',
+    keywords: 'home loan balance transfer guide, when to transfer home loan, refinance mortgage',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Blogs', path: '/blogs' },
+      { name: 'Balance Transfer Guide', path: '/blogs/home-loan-balance-transfer-guide' },
+    ],
+  },
+  '/blogs/loan-against-property-bangalore-eligibility-documents': {
+    title: 'Loan Against Property in Bangalore: Eligibility & Documents | Group ACH',
+    description:
+      'Complete guide to unlocking liquidity against residential, commercial, or industrial real estate in Bangalore with LTV guidelines and document lists.',
+    canonicalPath: '/blogs/loan-against-property-bangalore-eligibility-documents',
+    h1: 'Loan Against Property in Bangalore: Eligibility, Documents & Valuation Norms',
+    keywords: 'loan against property bangalore, lap documents bangalore, property loan eligibility',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Blogs', path: '/blogs' },
+      { name: 'LAP Bangalore Guide', path: '/blogs/loan-against-property-bangalore-eligibility-documents' },
+    ],
+  },
+  '/blogs/home-loan-vs-loan-against-property': {
+    title: 'Home Loan vs Loan Against Property: Key Differences | Group ACH',
+    description:
+      'Detailed comparison of Home Loans and LAP covering interest rate spreads, end-use restrictions, collateral rules, and income tax deductions.',
+    canonicalPath: '/blogs/home-loan-vs-loan-against-property',
+    h1: 'Home Loan vs Loan Against Property: Key Differences in Rates, Tenure & Tax Rules',
+    keywords: 'home loan vs loan against property, difference between home loan and lap',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Blogs', path: '/blogs' },
+      { name: 'Home Loan vs LAP', path: '/blogs/home-loan-vs-loan-against-property' },
+    ],
+  },
+  '/blogs/how-cibil-score-affects-loan-eligibility': {
+    title: 'How CIBIL Score Can Affect Loan Eligibility and Rates | Group ACH',
+    description:
+      'Learn how credit scores (300 to 900) influence loan sanction probability, interest pricing bands, and actionable steps to improve your credit report.',
+    canonicalPath: '/blogs/how-cibil-score-affects-loan-eligibility',
+    h1: 'How CIBIL Score Can Affect Loan Eligibility and Interest Rates in India',
+    keywords: 'how cibil score affects loan eligibility, cibil score for home loan, minimum cibil for loan',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Blogs', path: '/blogs' },
+      { name: 'CIBIL Score Guide', path: '/blogs/how-cibil-score-affects-loan-eligibility' },
+    ],
+  },
+  '/blogs/home-loan-for-self-employed-applicants': {
+    title: 'Home Loan for Self-Employed Applicants: ITR & Surrogates | Group ACH',
+    description:
+      'How business proprietors, traders, and consultants can qualify for substantial home loans using banking surrogates, GST turnover, and depreciation add-backs.',
+    canonicalPath: '/blogs/home-loan-for-self-employed-applicants',
+    h1: 'Home Loan for Self-Employed Applicants: Approvals, ITR & Banking Surrogates',
+    keywords: 'home loan for self-employed applicants, self employed mortgage, banking surrogate loan',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Blogs', path: '/blogs' },
+      { name: 'Self-Employed Home Loan', path: '/blogs/home-loan-for-self-employed-applicants' },
+    ],
+  },
+  '/blogs/home-loan-for-salaried-employees': {
+    title: 'Home Loan for Salaried Employees: Benefits & Guidelines | Group ACH',
+    description:
+      'Guidance for salaried professionals in IT, MNCs, and government sectors on securing preferential rates, step-up EMIs, and fast digital sanctions.',
+    canonicalPath: '/blogs/home-loan-for-salaried-employees',
+    h1: 'Home Loan for Salaried Employees: Benefits, Documentation & Corporate Discounts',
+    keywords: 'home loan for salaried employees, corporate home loan, salaried applicant mortgage',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Blogs', path: '/blogs' },
+      { name: 'Salaried Home Loan', path: '/blogs/home-loan-for-salaried-employees' },
+    ],
+  },
+  '/blogs/how-much-home-loan-can-i-afford': {
+    title: 'How Much Home Loan Can I Afford? Practical Budgeting Guide | Group ACH',
+    description:
+      'Calculate your realistic home purchase budget factoring in down payment reserves, registration charges, interior fit-outs, and emergency buffers.',
+    canonicalPath: '/blogs/how-much-home-loan-can-i-afford',
+    h1: 'How Much Home Loan Can I Afford? A Practical Guide to Budgeting & Down Payments',
+    keywords: 'how much home loan can i afford, home affordability calculator, home buying budget',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Blogs', path: '/blogs' },
+      { name: 'Affordability Guide', path: '/blogs/how-much-home-loan-can-i-afford' },
+    ],
+  },
+  '/blogs/home-loan-processing-step-by-step': {
+    title: 'Home Loan Processing: Step-by-Step From Login to Disbursal | Group ACH',
+    description:
+      'Detailed overview of the 6 core stages of loan processing: credit appraisal, legal title search, property valuation, sanction letter, and disbursal.',
+    canonicalPath: '/blogs/home-loan-processing-step-by-step',
+    h1: 'Home Loan Processing: Step-by-Step Guide From Application to Account Disbursal',
+    keywords: 'home loan processing step-by-step, loan disbursal stages, mortgage underwriting steps',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Blogs', path: '/blogs' },
+      { name: 'Processing Guide', path: '/blogs/home-loan-processing-step-by-step' },
+    ],
+  },
+  '/blogs/common-reasons-for-home-loan-rejection': {
+    title: 'Common Reasons for Home Loan Rejection & Solutions | Group ACH',
+    description:
+      'Discover the most frequent triggers for mortgage application rejection and proven strategies to rectify issues before reapplying.',
+    canonicalPath: '/blogs/common-reasons-for-home-loan-rejection',
+    h1: 'Common Reasons for Home Loan Rejection & How to Overcome Them in India',
+    keywords: 'common reasons for home loan rejection, why home loan rejected, overcome loan rejection',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Blogs', path: '/blogs' },
+      { name: 'Rejection Reasons', path: '/blogs/common-reasons-for-home-loan-rejection' },
+    ],
+  },
+  '/blogs/home-loan-prepayment-what-to-consider': {
+    title: 'Home Loan Prepayment: What to Consider & Savings Math | Group ACH',
+    description:
+      'Should you prepay your home loan early or invest surplus funds? Analyze interest savings, tax trade-offs, and part-prepayment strategies.',
+    canonicalPath: '/blogs/home-loan-prepayment-what-to-consider',
+    h1: 'Home Loan Prepayment: What to Consider, Savings Math & Part-Payment Rules',
+    keywords: 'home loan prepayment, part prepayment home loan, home loan pre closure',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Blogs', path: '/blogs' },
+      { name: 'Prepayment Guide', path: '/blogs/home-loan-prepayment-what-to-consider' },
+    ],
+  },
+};
+
+// Aliases mapping for clean routing consolidation
+export const ROUTE_ALIASES: Record<string, string> = {
+  '/home-loan-bangalore': '/home-loan/bangalore',
+  '/home-loan-bengaluru': '/home-loan/bangalore',
+  '/bengaluru': '/home-loan/bangalore',
+  '/bangalore': '/home-loan/bangalore',
+  '/home-loan-consultant': '/home-loan',
+  '/home-loan-advisor': '/home-loan',
+  '/home-loan-eligibility': '/home-loan/eligibility',
+  '/home-loan-documents': '/home-loan/documents-required',
+  '/home-loan-balance-transfer': '/home-loan/balance-transfer',
+  '/home-loan-for-salaried': '/blogs/home-loan-for-salaried-employees',
+  '/home-loan-for-self-employed': '/blogs/home-loan-for-self-employed-applicants',
+  '/loan-against-property-bangalore': '/loan-against-property/bangalore',
+  '/loan-against-property-bengaluru': '/loan-against-property/bangalore',
+  '/loan-against-property-consultant': '/loan-against-property',
+  '/property-loan': '/loan-against-property',
+  '/mortgage-loan': '/loan-against-property',
+  '/blog': '/blogs',
+  '/loans-in-bangalore': '/home-loan/bangalore',
+  '/loans-in-bengaluru': '/home-loan/bangalore',
+  '/loans-bangalore': '/home-loan/bangalore',
+  '/bangalore-loans': '/home-loan/bangalore',
+  // Blog aliases
+  '/blog/home-loan-eligibility-criteria-guide': '/blogs/home-loan-eligibility-bangalore',
+  '/blog/complete-documents-checklist-home-loan': '/blogs/documents-required-for-home-loan',
+  '/blog/loan-against-property-vs-home-loan-differences': '/blogs/home-loan-vs-loan-against-property',
+  '/blog/home-loan-balance-transfer-savings-calculator': '/blogs/home-loan-balance-transfer-guide',
+  '/blog/self-employed-home-loan-income-proof-guide': '/blogs/home-loan-for-self-employed-applicants',
 };
 
 /**
  * Apply SEO metadata and JSON-LD schema dynamically to document head
  */
 export function applyPageSeo(path: string, customConfig?: Partial<PageSeoConfig>): PageSeoConfig {
-  const normalizedPath = path.toLowerCase().replace(/\/$/, '') || '/';
-  const matched = SITE_SEO_REGISTRY[normalizedPath] || SITE_SEO_REGISTRY['/'];
+  const cleanPath = path.toLowerCase().replace(/\/$/, '') || '/';
+  const targetPath = ROUTE_ALIASES[cleanPath] || cleanPath;
+  const matched = SITE_SEO_REGISTRY[targetPath] || SITE_SEO_REGISTRY['/'];
   const config: PageSeoConfig = {
     ...matched,
     ...customConfig,
@@ -340,7 +604,16 @@ export function applyPageSeo(path: string, customConfig?: Partial<PageSeoConfig>
   }
   descMeta.setAttribute('content', config.description);
 
-  // Canonical Link
+  // Meta Robots
+  let robotsMeta = document.querySelector('meta[name="robots"]');
+  if (!robotsMeta) {
+    robotsMeta = document.createElement('meta');
+    robotsMeta.setAttribute('name', 'robots');
+    document.head.appendChild(robotsMeta);
+  }
+  robotsMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
+
+  // Canonical Link: strictly https://www.achlinks.in/...
   let canonicalLink = document.querySelector('link[rel="canonical"]');
   if (!canonicalLink) {
     canonicalLink = document.createElement('link');
@@ -350,39 +623,39 @@ export function applyPageSeo(path: string, customConfig?: Partial<PageSeoConfig>
   const canonicalUrl = `${BASE_URL}${config.canonicalPath}`;
   canonicalLink.setAttribute('href', canonicalUrl);
 
-  // Multilingual Hreflang Alternate Links (en-IN, hi-IN, x-default)
-  const setHreflang = (lang: string, url: string) => {
-    let link = document.querySelector(`link[rel="alternate"][hreflang="${lang}"]`);
-    if (!link) {
-      link = document.createElement('link');
-      link.setAttribute('rel', 'alternate');
-      link.setAttribute('hreflang', lang);
-      document.head.appendChild(link);
+  // Open Graph Tags
+  const setOg = (property: string, content: string) => {
+    let el = document.querySelector(`meta[property="${property}"]`);
+    if (!el) {
+      el = document.createElement('meta');
+      el.setAttribute('property', property);
+      document.head.appendChild(el);
     }
-    link.setAttribute('href', url);
+    el.setAttribute('content', content);
   };
-  setHreflang('en-IN', canonicalUrl);
-  setHreflang('hi-IN', canonicalUrl);
-  setHreflang('x-default', canonicalUrl);
-
-  // Open Graph
-  const ogTitle = document.querySelector('meta[property="og:title"]');
-  if (ogTitle) ogTitle.setAttribute('content', config.ogTitle || config.title);
-
-  const ogDesc = document.querySelector('meta[property="og:description"]');
-  if (ogDesc) ogDesc.setAttribute('content', config.ogDescription || config.description);
-
-  const ogUrl = document.querySelector('meta[property="og:url"]');
-  if (ogUrl) ogUrl.setAttribute('content', canonicalUrl);
+  setOg('og:title', config.ogTitle || config.title);
+  setOg('og:description', config.ogDescription || config.description);
+  setOg('og:url', canonicalUrl);
+  setOg('og:site_name', 'Group ACH');
+  setOg('og:type', config.canonicalPath.startsWith('/blogs/') ? 'article' : 'website');
+  setOg('og:image', config.ogImage || `${BASE_URL}/og-image.jpg`);
 
   // Twitter Cards
-  const twTitle = document.querySelector('meta[name="twitter:title"]');
-  if (twTitle) twTitle.setAttribute('content', config.title);
+  const setTwitter = (name: string, content: string) => {
+    let el = document.querySelector(`meta[name="${name}"]`);
+    if (!el) {
+      el = document.createElement('meta');
+      el.setAttribute('name', name);
+      document.head.appendChild(el);
+    }
+    el.setAttribute('content', content);
+  };
+  setTwitter('twitter:card', 'summary_large_image');
+  setTwitter('twitter:title', config.title);
+  setTwitter('twitter:description', config.description);
+  setTwitter('twitter:image', config.ogImage || `${BASE_URL}/og-image.jpg`);
 
-  const twDesc = document.querySelector('meta[name="twitter:description"]');
-  if (twDesc) twDesc.setAttribute('content', config.description);
-
-  // Inject BreadcrumbList Schema if breadcrumbs exist
+  // Inject BreadcrumbList & Schema.org JSON-LD
   let dynamicScript = document.getElementById('dynamic-route-schema');
   if (!dynamicScript) {
     dynamicScript = document.createElement('script');
@@ -405,15 +678,17 @@ export function applyPageSeo(path: string, customConfig?: Partial<PageSeoConfig>
         }
       : null;
 
-  const combinedSchema = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      ...(breadcrumbsSchema ? [breadcrumbsSchema] : []),
-      ...(config.schema ? [config.schema] : []),
-    ],
-  };
+  const graphElements = [
+    ...(breadcrumbsSchema ? [breadcrumbsSchema] : []),
+    ...(config.schema ? [config.schema] : []),
+  ];
 
-  dynamicScript.textContent = JSON.stringify(combinedSchema);
+  if (graphElements.length > 0) {
+    dynamicScript.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': graphElements,
+    });
+  }
 
   return config;
 }
